@@ -355,7 +355,7 @@
 
   <url>
     <loc>https://vulth.sly.io/</loc>
-    <lastmod>2022-04-11</lastmod>
+    <lastmod>2022-04-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -363,63 +363,63 @@
   
   <url>
     <loc>https://vulth.sly.io/tags/2021FOCUS/</loc>
-    <lastmod>2022-04-11</lastmod>
+    <lastmod>2022-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vulth.sly.io/tags/FOCUS/</loc>
-    <lastmod>2022-04-11</lastmod>
+    <lastmod>2022-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vulth.sly.io/tags/2022FOCUS/</loc>
-    <lastmod>2022-04-11</lastmod>
+    <lastmod>2022-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vulth.sly.io/tags/CVE-EXP/</loc>
-    <lastmod>2022-04-11</lastmod>
+    <lastmod>2022-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vulth.sly.io/tags/2021CVE-EXP/</loc>
-    <lastmod>2022-04-11</lastmod>
+    <lastmod>2022-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vulth.sly.io/tags/NEWS/</loc>
-    <lastmod>2022-04-11</lastmod>
+    <lastmod>2022-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vulth.sly.io/tags/2022NEWS/</loc>
-    <lastmod>2022-04-11</lastmod>
+    <lastmod>2022-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vulth.sly.io/tags/2022CVE-EXP/</loc>
-    <lastmod>2022-04-11</lastmod>
+    <lastmod>2022-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vulth.sly.io/tags/OTHER-EXP/</loc>
-    <lastmod>2022-04-11</lastmod>
+    <lastmod>2022-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
