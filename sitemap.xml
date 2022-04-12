@@ -11,24 +11,6 @@
   </url>
   
   <url>
-    <loc>https://vulth.sly.io/2022/readme-vul-04/</loc>
-    
-    <lastmod>2022-04-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vulth.sly.io/2022/readme-vul-03/</loc>
-    
-    <lastmod>2022-04-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://vulth.sly.io/2022/readme-vul-02/</loc>
     
     <lastmod>2022-04-12</lastmod>
@@ -47,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://vulth.sly.io/2021/readme-vul-20/</loc>
+    <loc>https://vulth.sly.io/2021/readme-vul-19/</loc>
     
     <lastmod>2022-04-12</lastmod>
     
@@ -56,7 +38,34 @@
   </url>
   
   <url>
-    <loc>https://vulth.sly.io/2021/readme-vul-19/</loc>
+    <loc>https://vulth.sly.io/2021/readme-vul-02/</loc>
+    
+    <lastmod>2022-04-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vulth.sly.io/2022/readme-vul-04/</loc>
+    
+    <lastmod>2022-04-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vulth.sly.io/2022/readme-vul-03/</loc>
+    
+    <lastmod>2022-04-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vulth.sly.io/2021/readme-vul-20/</loc>
     
     <lastmod>2022-04-12</lastmod>
     
@@ -201,15 +210,6 @@
   
   <url>
     <loc>https://vulth.sly.io/2021/readme-vul-03/</loc>
-    
-    <lastmod>2022-04-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vulth.sly.io/2021/readme-vul-02/</loc>
     
     <lastmod>2022-04-12</lastmod>
     
