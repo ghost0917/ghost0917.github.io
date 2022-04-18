@@ -1,0 +1,783 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>2022年CVE&amp;EXP信息(5) | vulthreat</title><meta name="keywords" content="CVE&amp;EXP,2022CVE&amp;EXP"><meta name="author" content="FALSE"><meta name="copyright" content="FALSE"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="CVE-2022-21873  Tile Data Repository 特权提升漏洞。  CVE-2022-21874  Windows 安全中心 API 远程代码执行漏洞。  CVE-2022-21875  Windows 存储特权提升漏洞。  CVE-2022-21876  Win32k 信息泄露漏洞。  CVE-2022-21877  存储空间控制器信息泄露漏洞。   https:&#x2F;&#x2F;gi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2022年CVE&amp;EXP信息(5)">
+<meta property="og:url" content="https://vulth.sly.io/2022/readme-vul-05/index.html">
+<meta property="og:site_name" content="vulthreat">
+<meta property="og:description" content="CVE-2022-21873  Tile Data Repository 特权提升漏洞。  CVE-2022-21874  Windows 安全中心 API 远程代码执行漏洞。  CVE-2022-21875  Windows 存储特权提升漏洞。  CVE-2022-21876  Win32k 信息泄露漏洞。  CVE-2022-21877  存储空间控制器信息泄露漏洞。   https:&#x2F;&#x2F;gi">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+<meta property="article:published_time" content="2022-04-18T02:11:38.895Z">
+<meta property="article:modified_time" content="2022-04-18T02:11:35.731Z">
+<meta property="article:author" content="FALSE">
+<meta property="article:tag" content="CVE&amp;EXP">
+<meta property="article:tag" content="2022CVE&amp;EXP">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://vulth.sly.io/2022/readme-vul-05/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '2022年CVE&EXP信息(5)',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-18 10:11:35'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="vulthreat" type="application/atom+xml">
+<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">41</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">vulthreat</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">2022年CVE&amp;EXP信息(5)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-04-18T02:11:38.895Z" title="发表于 2022-04-18 10:11:38">2022-04-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-04-18T02:11:35.731Z" title="更新于 2022-04-18 10:11:35">2022-04-18</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="2022年CVE&amp;EXP信息(5)"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="CVE-2022-21873"><a href="#CVE-2022-21873" class="headerlink" title="CVE-2022-21873 "></a>CVE-2022-21873 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Tile Data Repository 特权提升漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21874"><a href="#CVE-2022-21874" class="headerlink" title="CVE-2022-21874 "></a>CVE-2022-21874 <img src="https://img.shields.io/badge/score-9.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 安全中心 API 远程代码执行漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21875"><a href="#CVE-2022-21875" class="headerlink" title="CVE-2022-21875 "></a>CVE-2022-21875 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 存储特权提升漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21876"><a href="#CVE-2022-21876" class="headerlink" title="CVE-2022-21876 "></a>CVE-2022-21876 <img src="https://img.shields.io/badge/score-5.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Win32k 信息泄露漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21877"><a href="#CVE-2022-21877" class="headerlink" title="CVE-2022-21877 "></a>CVE-2022-21877 <img src="https://img.shields.io/badge/score-5.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>存储空间控制器信息泄露漏洞。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Big5-sec/cve-2022-21877">https://github.com/Big5-sec/cve-2022-21877</a>  <img src="https://img.shields.io/badge/github-maybe--exp-green" alt="github" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/03/09 00:15-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/github/stars/Big5-sec/cve-2022-21877.svg" alt="starts" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/github/forks/Big5-sec/cve-2022-21877.svg" alt="forks" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-21878"><a href="#CVE-2022-21878" class="headerlink" title="CVE-2022-21878 "></a>CVE-2022-21878 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 地理定位服务远程代码执行漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21879"><a href="#CVE-2022-21879" class="headerlink" title="CVE-2022-21879 "></a>CVE-2022-21879 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 内核特权提升漏洞。此 CVE ID 在 CVE-2022-21881 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21880"><a href="#CVE-2022-21880" class="headerlink" title="CVE-2022-21880 "></a>CVE-2022-21880 <img src="https://img.shields.io/badge/score-7.5-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows GDI+ 信息泄露漏洞。此 CVE ID 在 CVE-2022-21915 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21881"><a href="#CVE-2022-21881" class="headerlink" title="CVE-2022-21881 "></a>CVE-2022-21881 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 内核特权提升漏洞。此 CVE ID 在 CVE-2022-21879 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21882"><a href="#CVE-2022-21882" class="headerlink" title="CVE-2022-21882 "></a>CVE-2022-21882 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Win32k 特权提升漏洞。此 CVE ID 在 CVE-2022-21887 中是唯一的。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-21882">https://nvd.nist.gov/vuln/detail/CVE-2022-21882</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/04/06 04:16-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-21883"><a href="#CVE-2022-21883" class="headerlink" title="CVE-2022-21883 "></a>CVE-2022-21883 <img src="https://img.shields.io/badge/score-7.5-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows IKE 扩展拒绝服务漏洞。此 CVE ID 在 CVE-2022-21843、CVE-2022-21848、CVE-2022-21889、CVE-2022-21890 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21884"><a href="#CVE-2022-21884" class="headerlink" title="CVE-2022-21884 "></a>CVE-2022-21884 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>本地安全机构子系统服务特权提升漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21885"><a href="#CVE-2022-21885" class="headerlink" title="CVE-2022-21885 "></a>CVE-2022-21885 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 远程访问连接管理器特权提升漏洞。此 CVE ID 在 CVE-2022-21914 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21887"><a href="#CVE-2022-21887" class="headerlink" title="CVE-2022-21887 "></a>CVE-2022-21887 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Win32k 特权提升漏洞。此 CVE ID 在 CVE-2022-21882 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21888"><a href="#CVE-2022-21888" class="headerlink" title="CVE-2022-21888 "></a>CVE-2022-21888 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 现代执行服务器远程代码执行漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21889"><a href="#CVE-2022-21889" class="headerlink" title="CVE-2022-21889 "></a>CVE-2022-21889 <img src="https://img.shields.io/badge/score-7.5-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows IKE 扩展拒绝服务漏洞。此 CVE ID 在 CVE-2022-21843、CVE-2022-21848、CVE-2022-21883、CVE-2022-21890 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21890"><a href="#CVE-2022-21890" class="headerlink" title="CVE-2022-21890 "></a>CVE-2022-21890 <img src="https://img.shields.io/badge/score-7.5-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows IKE 扩展拒绝服务漏洞。此 CVE ID 在 CVE-2022-21843、CVE-2022-21848、CVE-2022-21883、CVE-2022-21889 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21891"><a href="#CVE-2022-21891" class="headerlink" title="CVE-2022-21891 "></a>CVE-2022-21891 <img src="https://img.shields.io/badge/score-4.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Microsoft Dynamics 365（本地）欺骗漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21892"><a href="#CVE-2022-21892" class="headerlink" title="CVE-2022-21892 "></a>CVE-2022-21892 <img src="https://img.shields.io/badge/score-6.8-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 弹性文件系统 (ReFS​​) 远程代码执行漏洞。此 CVE ID 在 CVE-2022-21928、CVE-2022-21958、CVE-2022-21959、CVE-2022-21960、CVE-2022-21961、CVE-2022-21962、CVE-2022-21963 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21893"><a href="#CVE-2022-21893" class="headerlink" title="CVE-2022-21893 "></a>CVE-2022-21893 <img src="https://img.shields.io/badge/score-8.0-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>远程桌面协议远程代码执行漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21894"><a href="#CVE-2022-21894" class="headerlink" title="CVE-2022-21894 "></a>CVE-2022-21894 <img src="https://img.shields.io/badge/score-4.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>安全启动安全功能绕过漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21895"><a href="#CVE-2022-21895" class="headerlink" title="CVE-2022-21895 "></a>CVE-2022-21895 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 用户配置文件服务特权提升漏洞。此 CVE ID 在 CVE-2022-21919 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21896"><a href="#CVE-2022-21896" class="headerlink" title="CVE-2022-21896 "></a>CVE-2022-21896 <img src="https://img.shields.io/badge/score-7.0-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows DWM 核心库特权提升漏洞。此 CVE ID 在 CVE-2022-21852、CVE-2022-21902 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21897"><a href="#CVE-2022-21897" class="headerlink" title="CVE-2022-21897 "></a>CVE-2022-21897 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 通用日志文件系统驱动程序特权提升漏洞。此 CVE ID 在 CVE-2022-21916 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21898"><a href="#CVE-2022-21898" class="headerlink" title="CVE-2022-21898 "></a>CVE-2022-21898 <img src="https://img.shields.io/badge/score-9.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>DirectX 图形内核远程代码执行漏洞。此 CVE ID 在 CVE-2022-21912 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21899"><a href="#CVE-2022-21899" class="headerlink" title="CVE-2022-21899 "></a>CVE-2022-21899 <img src="https://img.shields.io/badge/score-5.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 可扩展固件接口安全功能绕过漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21900"><a href="#CVE-2022-21900" class="headerlink" title="CVE-2022-21900 "></a>CVE-2022-21900 <img src="https://img.shields.io/badge/score-4.6-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows Hyper-V 安全功能绕过漏洞。此 CVE ID 在 CVE-2022-21905 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21901"><a href="#CVE-2022-21901" class="headerlink" title="CVE-2022-21901 "></a>CVE-2022-21901 <img src="https://img.shields.io/badge/score-8.0-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows Hyper-V 特权提升漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21902"><a href="#CVE-2022-21902" class="headerlink" title="CVE-2022-21902 "></a>CVE-2022-21902 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows DWM 核心库特权提升漏洞。此 CVE ID 在 CVE-2022-21852、CVE-2022-21896 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21903"><a href="#CVE-2022-21903" class="headerlink" title="CVE-2022-21903 "></a>CVE-2022-21903 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows GDI 特权提升漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21904"><a href="#CVE-2022-21904" class="headerlink" title="CVE-2022-21904 "></a>CVE-2022-21904 <img src="https://img.shields.io/badge/score-7.5-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows GDI 信息泄露漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21905"><a href="#CVE-2022-21905" class="headerlink" title="CVE-2022-21905 "></a>CVE-2022-21905 <img src="https://img.shields.io/badge/score-8.0-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows Hyper-V 安全功能绕过漏洞。此 CVE ID 在 CVE-2022-21900 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21906"><a href="#CVE-2022-21906" class="headerlink" title="CVE-2022-21906 "></a>CVE-2022-21906 <img src="https://img.shields.io/badge/score-5.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows Defender 应用程序控制安全功能绕过漏洞。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-21906">https://nvd.nist.gov/vuln/detail/CVE-2022-21906</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/02/05 12:02-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-21907"><a href="#CVE-2022-21907" class="headerlink" title="CVE-2022-21907 "></a>CVE-2022-21907 <img src="https://img.shields.io/badge/score-9.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>HTTP 协议栈远程代码执行漏洞。</p>
+</blockquote>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/polakow/CVE-2022-21907">https://github.com/polakow/CVE-2022-21907</a>  <img src="https://img.shields.io/badge/github-maybe--exp-green" alt="github" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/04/18 09:15-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/github/stars/polakow/CVE-2022-21907.svg" alt="starts" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/github/forks/polakow/CVE-2022-21907.svg" alt="forks" style="display: inline-block;margin: 0 auto -4px;"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/p0dalirius/CVE-2022-21907-http.sys">https://github.com/p0dalirius/CVE-2022-21907-http.sys</a>  <img src="https://img.shields.io/badge/github-maybe--exp-green" alt="github" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/04/15 23:29-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/github/stars/p0dalirius/CVE-2022-21907-http.sys.svg" alt="starts" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/github/forks/p0dalirius/CVE-2022-21907-http.sys.svg" alt="forks" style="display: inline-block;margin: 0 auto -4px;"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/gpiechnik2/nmap-CVE-2022-21907">https://github.com/gpiechnik2/nmap-CVE-2022-21907</a>  <img src="https://img.shields.io/badge/github-maybe--exp-green" alt="github" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/04/17 04:32-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/github/stars/gpiechnik2/nmap-CVE-2022-21907.svg" alt="starts" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/github/forks/gpiechnik2/nmap-CVE-2022-21907.svg" alt="forks" style="display: inline-block;margin: 0 auto -4px;"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-21907">https://nvd.nist.gov/vuln/detail/CVE-2022-21907</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/04/16 02:15-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></p>
+</li>
+</ul>
+<h2 id="CVE-2022-21908"><a href="#CVE-2022-21908" class="headerlink" title="CVE-2022-21908 "></a>CVE-2022-21908 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows Installer 特权提升漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21910"><a href="#CVE-2022-21910" class="headerlink" title="CVE-2022-21910 "></a>CVE-2022-21910 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Microsoft 群集端口驱动程序特权提升漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21911"><a href="#CVE-2022-21911" class="headerlink" title="CVE-2022-21911 "></a>CVE-2022-21911 <img src="https://img.shields.io/badge/score-7.5-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>.NET Framework 拒绝服务漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21912"><a href="#CVE-2022-21912" class="headerlink" title="CVE-2022-21912 "></a>CVE-2022-21912 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>DirectX 图形内核远程代码执行漏洞。此 CVE ID 在 CVE-2022-21898 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21913"><a href="#CVE-2022-21913" class="headerlink" title="CVE-2022-21913 "></a>CVE-2022-21913 <img src="https://img.shields.io/badge/score-7.5-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>本地安全机构（域策略）远程协议安全功能绕过。</p>
+</blockquote>
+<h2 id="CVE-2022-21914"><a href="#CVE-2022-21914" class="headerlink" title="CVE-2022-21914 "></a>CVE-2022-21914 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 远程访问连接管理器特权提升漏洞。此 CVE ID 在 CVE-2022-21885 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21915"><a href="#CVE-2022-21915" class="headerlink" title="CVE-2022-21915 "></a>CVE-2022-21915 <img src="https://img.shields.io/badge/score-6.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows GDI+ 信息泄露漏洞。此 CVE ID 在 CVE-2022-21880 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21916"><a href="#CVE-2022-21916" class="headerlink" title="CVE-2022-21916 "></a>CVE-2022-21916 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 通用日志文件系统驱动程序特权提升漏洞。此 CVE ID 在 CVE-2022-21897 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21917"><a href="#CVE-2022-21917" class="headerlink" title="CVE-2022-21917 "></a>CVE-2022-21917 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>HEVC 视频扩展远程代码执行漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21918"><a href="#CVE-2022-21918" class="headerlink" title="CVE-2022-21918 "></a>CVE-2022-21918 <img src="https://img.shields.io/badge/score-6.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>DirectX 图形内核文件拒绝服务漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21919"><a href="#CVE-2022-21919" class="headerlink" title="CVE-2022-21919 "></a>CVE-2022-21919 <img src="https://img.shields.io/badge/score-7.0-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 用户配置文件服务特权提升漏洞。此 CVE ID 在 CVE-2022-21895 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21920"><a href="#CVE-2022-21920" class="headerlink" title="CVE-2022-21920 "></a>CVE-2022-21920 <img src="https://img.shields.io/badge/score-8.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows Kerberos 特权提升漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21921"><a href="#CVE-2022-21921" class="headerlink" title="CVE-2022-21921 "></a>CVE-2022-21921 <img src="https://img.shields.io/badge/score-4.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows Defender Credential Guard 安全功能绕过漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21922"><a href="#CVE-2022-21922" class="headerlink" title="CVE-2022-21922 "></a>CVE-2022-21922 <img src="https://img.shields.io/badge/score-8.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>远程过程调用运行时远程代码执行漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21924"><a href="#CVE-2022-21924" class="headerlink" title="CVE-2022-21924 "></a>CVE-2022-21924 <img src="https://img.shields.io/badge/score-5.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>工作站服务远程协议安全功能绕过漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21925"><a href="#CVE-2022-21925" class="headerlink" title="CVE-2022-21925 "></a>CVE-2022-21925 <img src="https://img.shields.io/badge/score-5.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows BackupKey 远程协议安全功能绕过漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21928"><a href="#CVE-2022-21928" class="headerlink" title="CVE-2022-21928 "></a>CVE-2022-21928 <img src="https://img.shields.io/badge/score-6.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 弹性文件系统 (ReFS​​) 远程代码执行漏洞。此 CVE ID 在 CVE-2022-21892、CVE-2022-21958、CVE-2022-21959、CVE-2022-21960、CVE-2022-21961、CVE-2022-21962、CVE-2022-21963 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21929"><a href="#CVE-2022-21929" class="headerlink" title="CVE-2022-21929 "></a>CVE-2022-21929 <img src="https://img.shields.io/badge/score-2.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Microsoft Edge（基于 Chromium）远程代码执行漏洞。此 CVE ID 在 CVE-2022-21930、CVE-2022-21931 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21930"><a href="#CVE-2022-21930" class="headerlink" title="CVE-2022-21930 "></a>CVE-2022-21930 <img src="https://img.shields.io/badge/score-4.2-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Microsoft Edge（基于 Chromium）远程代码执行漏洞。此 CVE ID 在 CVE-2022-21929、CVE-2022-21931 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21931"><a href="#CVE-2022-21931" class="headerlink" title="CVE-2022-21931 "></a>CVE-2022-21931 <img src="https://img.shields.io/badge/score-4.2-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Microsoft Edge（基于 Chromium）远程代码执行漏洞。此 CVE ID 在 CVE-2022-21929、CVE-2022-21930 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21932"><a href="#CVE-2022-21932" class="headerlink" title="CVE-2022-21932 "></a>CVE-2022-21932 <img src="https://img.shields.io/badge/score-5.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Microsoft Dynamics 365 Customer Engagement 跨站点脚本漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21954"><a href="#CVE-2022-21954" class="headerlink" title="CVE-2022-21954 "></a>CVE-2022-21954 <img src="https://img.shields.io/badge/score-6.1-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Microsoft Edge（基于 Chromium）特权提升漏洞。此 CVE ID 在 CVE-2022-21970 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21958"><a href="#CVE-2022-21958" class="headerlink" title="CVE-2022-21958 "></a>CVE-2022-21958 <img src="https://img.shields.io/badge/score-6.8-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 弹性文件系统 (ReFS​​) 远程代码执行漏洞。此 CVE ID 在 CVE-2022-21892、CVE-2022-21928、CVE-2022-21959、CVE-2022-21960、CVE-2022-21961、CVE-2022-21962、CVE-2022-21963 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21959"><a href="#CVE-2022-21959" class="headerlink" title="CVE-2022-21959 "></a>CVE-2022-21959 <img src="https://img.shields.io/badge/score-6.8-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 弹性文件系统 (ReFS​​) 远程代码执行漏洞。此 CVE ID 在 CVE-2022-21892、CVE-2022-21928、CVE-2022-21958、CVE-2022-21960、CVE-2022-21961、CVE-2022-21962、CVE-2022-21963 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21960"><a href="#CVE-2022-21960" class="headerlink" title="CVE-2022-21960 "></a>CVE-2022-21960 <img src="https://img.shields.io/badge/score-6.8-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 弹性文件系统 (ReFS​​) 远程代码执行漏洞。此 CVE ID 在 CVE-2022-21892、CVE-2022-21928、CVE-2022-21958、CVE-2022-21959、CVE-2022-21961、CVE-2022-21962、CVE-2022-21963 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21961"><a href="#CVE-2022-21961" class="headerlink" title="CVE-2022-21961 "></a>CVE-2022-21961 <img src="https://img.shields.io/badge/score-6.8-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 弹性文件系统 (ReFS​​) 远程代码执行漏洞。此 CVE ID 在 CVE-2022-21892、CVE-2022-21928、CVE-2022-21958、CVE-2022-21959、CVE-2022-21960、CVE-2022-21962、CVE-2022-21963 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21962"><a href="#CVE-2022-21962" class="headerlink" title="CVE-2022-21962 "></a>CVE-2022-21962 <img src="https://img.shields.io/badge/score-6.8-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 弹性文件系统 (ReFS​​) 远程代码执行漏洞。此 CVE ID 在 CVE-2022-21892、CVE-2022-21928、CVE-2022-21958、CVE-2022-21959、CVE-2022-21960、CVE-2022-21961、CVE-2022-21963 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21963"><a href="#CVE-2022-21963" class="headerlink" title="CVE-2022-21963 "></a>CVE-2022-21963 <img src="https://img.shields.io/badge/score-6.8-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Windows 弹性文件系统 (ReFS​​) 远程代码执行漏洞。此 CVE ID 在 CVE-2022-21892、CVE-2022-21928、CVE-2022-21958、CVE-2022-21959、CVE-2022-21960、CVE-2022-21961、CVE-2022-21962 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21964"><a href="#CVE-2022-21964" class="headerlink" title="CVE-2022-21964 "></a>CVE-2022-21964 <img src="https://img.shields.io/badge/score-5.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>远程桌面许可诊断器信息泄露漏洞。</p>
+</blockquote>
+<h2 id="CVE-2022-21969"><a href="#CVE-2022-21969" class="headerlink" title="CVE-2022-21969 "></a>CVE-2022-21969 <img src="https://img.shields.io/badge/score-9.0-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Microsoft Exchange Server 远程执行代码漏洞。此 CVE ID 在 CVE-2022-21846、CVE-2022-21855 中是唯一的。</p>
+</blockquote>
+<h2 id="CVE-2022-21970"><a href="#CVE-2022-21970" class="headerlink" title="CVE-2022-21970 "></a>CVE-2022-21970 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Microsoft Edge（基于 Chromium）特权提升漏洞。此 CVE ID 在 CVE-2022-21954 中是唯一的。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-21970">https://nvd.nist.gov/vuln/detail/CVE-2022-21970</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/22 00:24-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-0129"><a href="#CVE-2022-0129" class="headerlink" title="CVE-2022-0129 "></a>CVE-2022-0129 <img src="https://img.shields.io/badge/score-6.7-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>McAfee TechCheck 4.0.0.2 之前版本中的不受控制的搜索路径元素漏洞允许本地管理员加载他们自己的动态链接库 (DLL)，从而获得系统用户的权限提升。这是通过将恶意 DLL 放置在运行该进程的同一目录中来实现的。</p>
+</blockquote>
+<h2 id="CVE-2022-0173"><a href="#CVE-2022-0173" class="headerlink" title="CVE-2022-0173 "></a>CVE-2022-0173 <img src="https://img.shields.io/badge/score-5.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>radare2 容易受到越界读取的影响</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0173">https://nvd.nist.gov/vuln/detail/CVE-2022-0173</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/03/02 03:53-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-0170"><a href="#CVE-2022-0170" class="headerlink" title="CVE-2022-0170 "></a>CVE-2022-0170 <img src="https://img.shields.io/badge/score-4.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>peertube 容易受到不当访问控制的影响</p>
+</blockquote>
+<h2 id="CVE-2022-21669"><a href="#CVE-2022-21669" class="headerlink" title="CVE-2022-21669 "></a>CVE-2022-21669 <img src="https://img.shields.io/badge/score-7.5-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>PuddingBot 是一个群组管理机器人。在 0.0.6-b933652 及之前的版本中，bot 令牌在 main.py 中公开暴露，使恶意行为者可以访问它。机器人令牌已被吊销，新版本已在服务器上运行。截至发布之时，维护人员正计划在以后更新代码以反映此更改。</p>
+</blockquote>
+<h2 id="CVE-2022-21671"><a href="#CVE-2022-21671" class="headerlink" title="CVE-2022-21671 "></a>CVE-2022-21671 <img src="https://img.shields.io/badge/score-6.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>@replit/crosis 是一个使用 Replit 容器协议的 JavaScript 客户端。 7.3.1 之前的版本中存在涉及敏感信息泄露的漏洞。当将此库用作以独立方式以编程方式与 Replit 通信的方式时，如果多次尝试通过 WebSocket 联系 Replit 失败，则该库将尝试使用基于回退轮询的代理进行通信。代理的 URL 已更改，因此与前一个 URL 进行的任何通信都可能到达 Replit 控制之外的服务器，并且用于连接到 Repl 的令牌可能被攻击者获取，从而导致该 Repl 的完全破坏（不是帐户）。这在版本 7.3.1 中通过将备用 WebSocket 轮询代理的地址更新为新的地址进行了修补。作为一种解决方法，用户可以在“ConnectArgs”中为轮询主机（“gp-v2.replit.com”）指定新地址。 GitHub 安全公告中提供了有关此解决方法的更多信息。</p>
+</blockquote>
+<h2 id="CVE-2022-0144"><a href="#CVE-2022-0144" class="headerlink" title="CVE-2022-0144 "></a>CVE-2022-0144 <img src="https://img.shields.io/badge/score-7.1-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>shelljs 容易受到不当权限管理的影响</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0144">https://nvd.nist.gov/vuln/detail/CVE-2022-0144</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/02/09 22:17-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-21668"><a href="#CVE-2022-21668" class="headerlink" title="CVE-2022-21668 "></a>CVE-2022-21668 <img src="https://img.shields.io/badge/score-8.6-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>pipenv 是一个 Python 开发工作流工具。从 2018.10.9 版本开始到 2022.1.8 版本之前，pipenv 解析需求文件中的一个缺陷允许攻击者在 requirements.txt 文件中的任何位置的注释中插入特制字符串，这将导致使用 pipenv 的受害者安装需求文件以从攻击者控制的包索引服务器下载依赖项。通过在恶意索引服务器提供的包中嵌入恶意代码，攻击者可以在受害者的系统上触发任意远程代码执行 (RCE)。如果攻击者能够在受害者使用 pipenv 安装的需求文件中隐藏恶意 <code>--index-url</code> 选项，则攻击者可以将任意恶意代码嵌入从其恶意索引服务器提供的包中，这些代码将在受害者的安装期间的主机（远程代码执行/RCE）。当 pip 从源分发安装时， setup.py 中的任何代码都由安装过程执行。此问题已在版本 2022.1.8 中修复。 GitHub 安全公告包含有关此漏洞的更多信息。</p>
+</blockquote>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/sreeram281997/CVE-2022-21668-Pipenv-RCE-vulnerability">https://github.com/sreeram281997/CVE-2022-21668-Pipenv-RCE-vulnerability</a>  <img src="https://img.shields.io/badge/github-maybe--exp-green" alt="github" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/03/28 09:27-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/github/stars/sreeram281997/CVE-2022-21668-Pipenv-RCE-vulnerability.svg" alt="starts" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/github/forks/sreeram281997/CVE-2022-21668-Pipenv-RCE-vulnerability.svg" alt="forks" style="display: inline-block;margin: 0 auto -4px;"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-21668">https://nvd.nist.gov/vuln/detail/CVE-2022-21668</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/03/27 02:15-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></p>
+</li>
+</ul>
+<h2 id="CVE-2022-21670"><a href="#CVE-2022-21670" class="headerlink" title="CVE-2022-21670 "></a>CVE-2022-21670 <img src="https://img.shields.io/badge/score-5.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>markdown-it 是一个 Markdown 解析器。在 1.3.2 版本之前，长度超过 50,000 个字符的特殊模式可能会显着降低解析器的速度。用户应升级到版本 12.3.2 以接收补丁。除了升级之外，没有已知的解决方法。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-21670">https://nvd.nist.gov/vuln/detail/CVE-2022-21670</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/19 04:18-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-21672"><a href="#CVE-2022-21672" class="headerlink" title="CVE-2022-21672 "></a>CVE-2022-21672 <img src="https://img.shields.io/badge/score-6.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>make-ca 是一个实用程序，用于为工作站和服务器提供和管理完整的 PKI 配置。从 0.9 版开始到 1.10 版之前，make-ca 会误解 Mozilla certdata.txt 并将显式不受信任的证书视为受信任的证书，从而导致系统信任那些显式不受信任的证书。一些已被黑客入侵的 CA 使用了明确不受信任的证书。恶意攻击者可能会利用它们执行 MIM 攻击。使用受影响版本的 make-ca 的每个人都应该升级到 make-ca-1.10，并以 <code>root</code> 用户身份运行 <code>make-ca -f -g</code> 以立即重新生成受信任的存储。作为一种解决方法，用户可以手动（或通过脚本）从 /etc/pki/tls 和 /etc/ssl/certs 中删除不受信任的证书，但不建议这样做，因为下次运行 make-ca 时手动更改将被覆盖更新可信锚点。</p>
+</blockquote>
+<h2 id="CVE-2022-0155"><a href="#CVE-2022-0155" class="headerlink" title="CVE-2022-0155 "></a>CVE-2022-0155 <img src="https://img.shields.io/badge/score-6.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>follow-redirects 容易将私人个人信息暴露给未经授权的参与者</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0155">https://nvd.nist.gov/vuln/detail/CVE-2022-0155</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/02/09 22:17-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-21666"><a href="#CVE-2022-21666" class="headerlink" title="CVE-2022-21666 "></a>CVE-2022-21666 <img src="https://img.shields.io/badge/score-7.2-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>有用的简单开源 CMS (USOC) 是面向程序员的内容管理系统 (CMS)。 Pb2.4Bfx3 之前的版本只允许具有管理权限的用户在 usersearch.php 中注入 Sql。用户应将文件 <code>admin/pages/useredit.php</code> 替换为较新的版本。 USOC 版本 Pb2.4Bfx3 包含一个固定版本的 <code>admin/pages/useredit.php</code>。</p>
+</blockquote>
+<h2 id="CVE-2022-0174"><a href="#CVE-2022-0174" class="headerlink" title="CVE-2022-0174 "></a>CVE-2022-0174 <img src="https://img.shields.io/badge/score-4.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>dolibarr 容易受到业务逻辑错误的影响</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0174">https://nvd.nist.gov/vuln/detail/CVE-2022-0174</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/20 03:16-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-0156"><a href="#CVE-2022-0156" class="headerlink" title="CVE-2022-0156 "></a>CVE-2022-0156 <img src="https://img.shields.io/badge/score-5.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>vim 很容易被释放后使用</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0156">https://nvd.nist.gov/vuln/detail/CVE-2022-0156</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/03/30 05:12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-0157"><a href="#CVE-2022-0157" class="headerlink" title="CVE-2022-0157 "></a>CVE-2022-0157 <img src="https://img.shields.io/badge/score-5.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>phoronix-test-suite 容易受到网页生成期间输入的不正确中和的影响（“跨站点脚本”）</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0157">https://nvd.nist.gov/vuln/detail/CVE-2022-0157</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/02/22 18:23-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-0158"><a href="#CVE-2022-0158" class="headerlink" title="CVE-2022-0158 "></a>CVE-2022-0158 <img src="https://img.shields.io/badge/score-3.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>vim 容易受到基于堆的缓冲区溢出的影响</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0158">https://nvd.nist.gov/vuln/detail/CVE-2022-0158</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/03/30 05:15-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-22114"><a href="#CVE-2022-22114" class="headerlink" title="CVE-2022-22114 "></a>CVE-2022-22114 <img src="https://img.shields.io/badge/score-9.6-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 Teedy 中，v1.5 到 v1.9 版本容易受到反射跨站点脚本 (XSS) 的攻击。 “搜索词”搜索功能在显示搜索结果时没有得到充分的净化，可被用来注入任意脚本。当受害者输入精心设计的 URL 时，这些脚本会在受害者的浏览器中执行。在最坏的情况下，受害者无意触发攻击的是一个高权限的管理员，注入的脚本可以提取会话ID，这可能导致管理员的帐户完全接管，由未经身份验证的攻击者。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-22114">https://nvd.nist.gov/vuln/detail/CVE-2022-22114</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/21 22:19-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-22115"><a href="#CVE-2022-22115" class="headerlink" title="CVE-2022-22115 "></a>CVE-2022-22115 <img src="https://img.shields.io/badge/score-9.0-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 Teedy 中，v1.5 到 v1.9 版本容易受到以创建的标签为名的存储跨站点脚本 (XSS) 的攻击。由于标签名称未在编辑标签页面中正确清理，低权限攻击者可以将恶意脚本存储在标签名称中。在最坏的情况下，无意中触发攻击的受害者是具有高度特权的管理员。注入的脚本可以提取会话 ID，这可能导致管理员完全接管帐户并提升权限。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-22115">https://nvd.nist.gov/vuln/detail/CVE-2022-22115</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/21 22:19-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-22116"><a href="#CVE-2022-22116" class="headerlink" title="CVE-2022-22116 "></a>CVE-2022-22116 <img src="https://img.shields.io/badge/score-5.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 Directus 中，版本 9.0.0-alpha.4 到 9.4.1 容易受到通过媒体上传功能中的 SVG 文件上传存储的跨站点脚本 (XSS) 漏洞的攻击。低权限的攻击者可以注入任意 javascript 代码，当受害者打开图像 URL 时，这些代码将在受害者的浏览器中执行。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-22116">https://nvd.nist.gov/vuln/detail/CVE-2022-22116</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/15 03:33-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-22117"><a href="#CVE-2022-22117" class="headerlink" title="CVE-2022-22117 "></a>CVE-2022-22117 <img src="https://img.shields.io/badge/score-5.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 Directus 中，版本 9.0.0-alpha.4 到 9.4.1 允许在媒体上传功能中不受限制地上传 .html 文件，这会导致跨站点脚本漏洞。低权限攻击者可以上传精心制作的 HTML 文件作为配置文件头像，当管理员或其他用户打开它时，XSS 有效负载会被触发。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-22117">https://nvd.nist.gov/vuln/detail/CVE-2022-22117</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/15 03:31-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-22120"><a href="#CVE-2022-22120" class="headerlink" title="CVE-2022-22120 "></a>CVE-2022-22120 <img src="https://img.shields.io/badge/score-5.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 NocoDB 中，0.9 到 0.83.8 版本容易受到密码重置功能中的可观察差异的影响。当请求为给定电子邮件地址重置密码时，如果电子邮件未在系统中注册，应用程序会显示错误消息。这允许攻击者枚举注册用户的电子邮件地址。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-22120">https://nvd.nist.gov/vuln/detail/CVE-2022-22120</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/20 02:30-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-22121"><a href="#CVE-2022-22121" class="headerlink" title="CVE-2022-22121 "></a>CVE-2022-22121 <img src="https://img.shields.io/badge/score-8.0-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/11-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 NocoDB 中，0.81.0 到 0.83.8 版本受到 CSV 注入漏洞（公式注入）的影响。低权限攻击者可以创建一个新表以在表行中注入有效负载。当管理员访问用户管理端点并将数据导出为 CSV 文件并打开它时，有效负载将被执行。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-22121">https://nvd.nist.gov/vuln/detail/CVE-2022-22121</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/20 02:24-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-22844"><a href="#CVE-2022-22844" class="headerlink" title="CVE-2022-22844 "></a>CVE-2022-22844 <img src="https://img.shields.io/badge/score-5.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在某些情况下，LibTIFF 4.3.0 在 tif_unix.c 中的 _TIFFmemcpy 中读取越界，涉及自定义标签和 0x0200 作为 DE 字段的第二个字。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-22844">https://nvd.nist.gov/vuln/detail/CVE-2022-22844</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/03/25 19:15-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-22817"><a href="#CVE-2022-22817" class="headerlink" title="CVE-2022-22817 "></a>CVE-2022-22817 <img src="https://img.shields.io/badge/score-9.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Pillow 9.0.0 之前的 PIL.ImageMath.eval 允许评估任意表达式，例如使用 Python exec 方法的表达式。也可以使用 lambda 表达式，</p>
+</blockquote>
+<h2 id="CVE-2022-0132"><a href="#CVE-2022-0132" class="headerlink" title="CVE-2022-0132 "></a>CVE-2022-0132 <img src="https://img.shields.io/badge/score-7.5-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>peertube 容易受到服务器端请求伪造（SSRF）的攻击</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0132">https://nvd.nist.gov/vuln/detail/CVE-2022-0132</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/15 00:06-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-0133"><a href="#CVE-2022-0133" class="headerlink" title="CVE-2022-0133 "></a>CVE-2022-0133 <img src="https://img.shields.io/badge/score-7.5-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>peertube 容易受到不当访问控制的影响</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0133">https://nvd.nist.gov/vuln/detail/CVE-2022-0133</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/15 00:52-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-21667"><a href="#CVE-2022-21667" class="headerlink" title="CVE-2022-21667 "></a>CVE-2022-21667 <img src="https://img.shields.io/badge/score-7.5-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>soketi 是一个开源的 WebSockets 服务器。读取 POST 请求时有一个未处理的情况，如果它无法读取请求的正文，则会导致服务器崩溃。如果 POST 请求以空主体发送到服务器的任何端点，即使未使用 Pusher 协议进行身份验证，它也会使服务器崩溃。所有运行服务器的用户都受到此漏洞的影响，强烈建议升级到最新补丁。没有解决此问题的方法。</p>
+</blockquote>
+<h2 id="CVE-2022-21823"><a href="#CVE-2022-21823" class="headerlink" title="CVE-2022-21823 "></a>CVE-2022-21823 <img src="https://img.shields.io/badge/score-5.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Ivanti Workspace Control <code>&lt;</code>2021.2 (10.7.30.0) 中存在不安全的敏感信息存储漏洞，由于未指定的攻击向量，该漏洞可能允许具有本地身份验证的低权限的攻击者获取关键信息。</p>
+</blockquote>
+<h2 id="CVE-2022-22263"><a href="#CVE-2022-22263" class="headerlink" title="CVE-2022-22263 "></a>CVE-2022-22263 <img src="https://img.shields.io/badge/score-5.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>SMR Jan-2022 Release 1 之前的 SecSettings 中不受保护的动态接收器允许不受信任的应用程序启动任意活动。</p>
+</blockquote>
+<h2 id="CVE-2022-22264"><a href="#CVE-2022-22264" class="headerlink" title="CVE-2022-22264 "></a>CVE-2022-22264 <img src="https://img.shields.io/badge/score-7.1-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 SMR 2022 年 1 月第 1 版之前，对 Dressroom 中传入意图的不当清理允许本地攻击者在未经许可的情况下读取和写入任意文件。</p>
+</blockquote>
+<h2 id="CVE-2022-22265"><a href="#CVE-2022-22265" class="headerlink" title="CVE-2022-22265 "></a>CVE-2022-22265 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 SMR Jan-2022 Release 1 之前，对 NPU 驱动程序中异常情况的不当检查或处理允许任意内存写入和代码执行。</p>
+</blockquote>
+<h2 id="CVE-2022-22266"><a href="#CVE-2022-22266" class="headerlink" title="CVE-2022-22266 "></a>CVE-2022-22266 <img src="https://img.shields.io/badge/score-3.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>（仅适用于中国机型）SMR Jan-2022 Release 1 之前的TencentWifiSecurity 应用程序中未受保护的WifiEvaluationService 允许不受信任的应用程序在未经适当许可的情况下获取WiFi 信息。</p>
+</blockquote>
+<h2 id="CVE-2022-22267"><a href="#CVE-2022-22267" class="headerlink" title="CVE-2022-22267 "></a>CVE-2022-22267 <img src="https://img.shields.io/badge/score-3.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>SMR Jan-2022 Release 1 之前的 ActivityMetricsLogger 中的隐式 Intent 劫持漏洞允许攻击者获取正在运行的应用程序信息。</p>
+</blockquote>
+<h2 id="CVE-2022-22268"><a href="#CVE-2022-22268" class="headerlink" title="CVE-2022-22268 "></a>CVE-2022-22268 <img src="https://img.shields.io/badge/score-6.1-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 SMR 2022 年 1 月第 1 版之前错误地实施 Knox Guard 允许物理上接近的攻击者通过 Samsung DeX 模式临时解锁 Knox Guard。</p>
+</blockquote>
+<h2 id="CVE-2022-22269"><a href="#CVE-2022-22269" class="headerlink" title="CVE-2022-22269 "></a>CVE-2022-22269 <img src="https://img.shields.io/badge/score-3.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 SMR Jan-2022 Release 1 之前将敏感数据保存在不受保护的 BluetoothSettingsProvider 允许不受信任的应用程序获取本地蓝牙 MAC 地址。</p>
+</blockquote>
+<h2 id="CVE-2022-22270"><a href="#CVE-2022-22270" class="headerlink" title="CVE-2022-22270 "></a>CVE-2022-22270 <img src="https://img.shields.io/badge/score-3.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 SMR Jan-2022 Release 1 之前的 Dialer 中存在隐式 Intent 劫持漏洞，允许非特权应用程序访问联系人信息。</p>
+</blockquote>
+<h2 id="CVE-2022-22271"><a href="#CVE-2022-22271" class="headerlink" title="CVE-2022-22271 "></a>CVE-2022-22271 <img src="https://img.shields.io/badge/score-5.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 SMR Jan-2022 Release 1 之前的 TIMA trustlet 内存复制之前缺少输入验证，允许攻击者从任意内存复制数据。</p>
+</blockquote>
+<h2 id="CVE-2022-22272"><a href="#CVE-2022-22272" class="headerlink" title="CVE-2022-22272 "></a>CVE-2022-22272 <img src="https://img.shields.io/badge/score-3.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 SMR Jan-2022 Release 1 之前 TelephonyManager 中的不当授权允许攻击者在没有 READ_PRIVILEGED_PHONE_STATE 权限的情况下获取 IMSI</p>
+</blockquote>
+<h2 id="CVE-2022-22283"><a href="#CVE-2022-22283" class="headerlink" title="CVE-2022-22283 "></a>CVE-2022-22283 <img src="https://img.shields.io/badge/score-3.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>6.20.1.005 之前的 Samsung Health 中的不正确会话管理漏洞会阻止从 Samsung Health 应用程序注销。</p>
+</blockquote>
+<h2 id="CVE-2022-22284"><a href="#CVE-2022-22284" class="headerlink" title="CVE-2022-22284 "></a>CVE-2022-22284 <img src="https://img.shields.io/badge/score-5.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>三星互联网 16.0.2.19 之前的不正确身份验证漏洞允许攻击者绕过秘密模式密码身份验证</p>
+</blockquote>
+<h2 id="CVE-2022-22285"><a href="#CVE-2022-22285" class="headerlink" title="CVE-2022-22285 "></a>CVE-2022-22285 <img src="https://img.shields.io/badge/score-7.1-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 Android R(11.0) 中的 12.2.05.0 版本和 Android S(12.0) 中的 12.3.02.1000 版本之前的 Reminder 中使用 PendingIntent 的漏洞允许攻击者通过劫持和修改意图来执行特权操作。</p>
+</blockquote>
+<h2 id="CVE-2022-22286"><a href="#CVE-2022-22286" class="headerlink" title="CVE-2022-22286 "></a>CVE-2022-22286 <img src="https://img.shields.io/badge/score-7.1-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 Android R(11.0) 中的 3.1.21.8 版本和 Android Q(10.0) 中的 2.6.30.5 版本之前的 Bixby 例程中使用 PendingIntent 的漏洞允许攻击者通过劫持和修改意图来执行特权操作。</p>
+</blockquote>
+<h2 id="CVE-2022-22287"><a href="#CVE-2022-22287" class="headerlink" title="CVE-2022-22287 "></a>CVE-2022-22287 <img src="https://img.shields.io/badge/score-4.6-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>三星电子邮件 6.1.60.16 之前的任意文件访问漏洞允许攻击者读取沙箱中的隔离数据。</p>
+</blockquote>
+<h2 id="CVE-2022-22288"><a href="#CVE-2022-22288" class="headerlink" title="CVE-2022-22288 "></a>CVE-2022-22288 <img src="https://img.shields.io/badge/score-7.5-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Galaxy Store 4.5.36.5 之前的不当授权漏洞允许远程应用安装白名单。</p>
+</blockquote>
+<h2 id="CVE-2022-22289"><a href="#CVE-2022-22289" class="headerlink" title="CVE-2022-22289 "></a>CVE-2022-22289 <img src="https://img.shields.io/badge/score-5.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>S Assistant 7.5 版本之前存在不当访问控制漏洞，允许攻击者远程获取敏感信息。</p>
+</blockquote>
+<h2 id="CVE-2022-22701"><a href="#CVE-2022-22701" class="headerlink" title="CVE-2022-22701 "></a>CVE-2022-22701 <img src="https://img.shields.io/badge/score-6.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>PartKeepr 版本最高为 v1.4.0，在创建部件时使用 URL 加载附件，并允许使用 ‘file://‘ URI 方案，允许经过身份验证的用户读取本地文件。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-22701">https://nvd.nist.gov/vuln/detail/CVE-2022-22701</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/19 22:14-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-22702"><a href="#CVE-2022-22702" class="headerlink" title="CVE-2022-22702 "></a>CVE-2022-22702 <img src="https://img.shields.io/badge/score-4.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>直到 v1.4.0 的 PartKeepr 版本，在创建部件时使用 URL 上传附件的功能不会验证是否可以向本地端口发出请求，从而允许经过身份验证的用户执行 SSRF 攻击和端口枚举。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-22702">https://nvd.nist.gov/vuln/detail/CVE-2022-22702</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/19 22:20-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-22815"><a href="#CVE-2022-22815" class="headerlink" title="CVE-2022-22815 "></a>CVE-2022-22815 <img src="https://img.shields.io/badge/score-9.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Pillow 9.0.0 之前的 path.c 中的 path_getbbox 不正确地初始化 ImagePath.Path。</p>
+</blockquote>
+<h2 id="CVE-2022-22816"><a href="#CVE-2022-22816" class="headerlink" title="CVE-2022-22816 "></a>CVE-2022-22816 <img src="https://img.shields.io/badge/score-6.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>9.0.0 之前的 Pillow 中 path.c 中的 path_getbbox 在 ImagePath.Path 初始化期间有一个缓冲区过度读取。</p>
+</blockquote>
+<h2 id="CVE-2022-22821"><a href="#CVE-2022-22821" class="headerlink" title="CVE-2022-22821 "></a>CVE-2022-22821 <img src="https://img.shields.io/badge/score-4.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>1.6.0 之前的 NVIDIA NeMo 在 ASR WebApp 中包含一个漏洞，其中 ../ 路径遍历可能导致在管理员权限可用时删除任何目录。</p>
+</blockquote>
+<h2 id="CVE-2022-22822"><a href="#CVE-2022-22822" class="headerlink" title="CVE-2022-22822 "></a>CVE-2022-22822 <img src="https://img.shields.io/badge/score-9.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>2.4.3 之前的 Expat（又名 libexpat）中的 xmlparse.c 中的 addBinding 存在整数溢出。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/nanopathi/external_expat_AOSP10_r33_CVE-2022-22822toCVE-2022-22827">https://github.com/nanopathi/external_expat_AOSP10_r33_CVE-2022-22822toCVE-2022-22827</a>  <img src="https://img.shields.io/badge/github-maybe--exp-green" alt="github" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/04/11 22:18-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/github/stars/nanopathi/external_expat_AOSP10_r33_CVE-2022-22822toCVE-2022-22827.svg" alt="starts" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/github/forks/nanopathi/external_expat_AOSP10_r33_CVE-2022-22822toCVE-2022-22827.svg" alt="forks" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-22823"><a href="#CVE-2022-22823" class="headerlink" title="CVE-2022-22823 "></a>CVE-2022-22823 <img src="https://img.shields.io/badge/score-9.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>2.4.3 之前的 Expat（又名 libexpat）中的 xmlparse.c 中的 build_model 有整数溢出。</p>
+</blockquote>
+<h2 id="CVE-2022-22824"><a href="#CVE-2022-22824" class="headerlink" title="CVE-2022-22824 "></a>CVE-2022-22824 <img src="https://img.shields.io/badge/score-9.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>2.4.3 之前的 Expat（又名 libexpat）中的 xmlparse.c 中的 defineAttribute 有整数溢出。</p>
+</blockquote>
+<h2 id="CVE-2022-22825"><a href="#CVE-2022-22825" class="headerlink" title="CVE-2022-22825 "></a>CVE-2022-22825 <img src="https://img.shields.io/badge/score-8.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 2.4.3 之前的 Expat（又名 libexpat）中的 xmlparse.c 中查找存在整数溢出。</p>
+</blockquote>
+<h2 id="CVE-2022-22826"><a href="#CVE-2022-22826" class="headerlink" title="CVE-2022-22826 "></a>CVE-2022-22826 <img src="https://img.shields.io/badge/score-8.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>2.4.3 之前的 Expat（又名 libexpat）中 xmlparse.c 中的 nextScaffoldPart 存在整数溢出。</p>
+</blockquote>
+<h2 id="CVE-2022-22827"><a href="#CVE-2022-22827" class="headerlink" title="CVE-2022-22827 "></a>CVE-2022-22827 <img src="https://img.shields.io/badge/score-8.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>2.4.3 之前的 Expat（又名 libexpat）中的 xmlparse.c 中的 storeAtts 存在整数溢出。</p>
+</blockquote>
+<h2 id="CVE-2022-22836"><a href="#CVE-2022-22836" class="headerlink" title="CVE-2022-22836 "></a>CVE-2022-22836 <img src="https://img.shields.io/badge/score-6.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>727 之前的 CoreFTP 服务器允许经过身份验证的攻击者在 HTTP PUT 请求中通过 ../ 进行目录遍历（用于文件创建）。</p>
+</blockquote>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.exploit-db.com/exploits/50652">https://www.exploit-db.com/exploits/50652</a>  <img src="https://img.shields.io/badge/exploit--db-exp-green" alt="exploit-db" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-22836">https://nvd.nist.gov/vuln/detail/CVE-2022-22836</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/20 00:15-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></p>
+</li>
+</ul>
+<h2 id="CVE-2022-22845"><a href="#CVE-2022-22845" class="headerlink" title="CVE-2022-22845 "></a>CVE-2022-22845 <img src="https://img.shields.io/badge/score-9.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>HOMER 7.x 的 1.4.28 之前的 QXIP SIPCAPTURE homer-app 在不同客户的安装中具有相同的 167f0db2-f83e-4baa-9736-d56064a5b415 JWT 密钥。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/OmriBaso/CVE-2022-22845-Exploit">https://github.com/OmriBaso/CVE-2022-22845-Exploit</a>  <img src="https://img.shields.io/badge/github-maybe--exp-green" alt="github" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/03/04 07:54-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/github/stars/OmriBaso/CVE-2022-22845-Exploit.svg" alt="starts" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/github/forks/OmriBaso/CVE-2022-22845-Exploit.svg" alt="forks" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-22846"><a href="#CVE-2022-22846" class="headerlink" title="CVE-2022-22846 "></a>CVE-2022-22846 <img src="https://img.shields.io/badge/score-5.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>从 0.9.16 到 Python 的 dnslib 包不会验证 DNS 回复中的 ID 值是否与查询中的 ID 值匹配。</p>
+</blockquote>
+<h2 id="CVE-2022-22847"><a href="#CVE-2022-22847" class="headerlink" title="CVE-2022-22847 "></a>CVE-2022-22847 <img src="https://img.shields.io/badge/score-9.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/10-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Formpipe Lasernet 9.13.3 之前的版本允许将文件包含在客户端 Web 服务中（通过经过身份验证的攻击者，或者在不需要身份验证的配置中）。</p>
+</blockquote>
+<h2 id="CVE-2022-21661"><a href="#CVE-2022-21661" class="headerlink" title="CVE-2022-21661 "></a>CVE-2022-21661 <img src="https://img.shields.io/badge/score-7.5-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/07-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>WordPress 是一个免费的开源内容管理系统，用 PHP 编写并与 MariaDB 数据库配对。由于 WP_Query 中的不当清理，可能存在通过以某种方式使用它的插件或主题进行 SQL 注入的情况。这已在 WordPress 版本 5.8.3 中进行了修补。受影响的旧版本也通过安全版本修复，可以追溯到 3.7.37。我们强烈建议您保持启用自动更新。此漏洞没有已知的解决方法。</p>
+</blockquote>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.exploit-db.com/exploits/50663">https://www.exploit-db.com/exploits/50663</a>  <img src="https://img.shields.io/badge/exploit--db-exp-green" alt="exploit-db" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/13-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-21661">https://nvd.nist.gov/vuln/detail/CVE-2022-21661</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/04/13 02:47-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></p>
+</li>
+</ul>
+<h2 id="CVE-2022-21662"><a href="#CVE-2022-21662" class="headerlink" title="CVE-2022-21662 "></a>CVE-2022-21662 <img src="https://img.shields.io/badge/score-5.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/07-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>WordPress 是一个免费的开源内容管理系统，用 PHP 编写并与 MariaDB 数据库配对。 WordPress 核心中经过身份验证的低权限用户（如作者）能够执行 JavaScript/执行存储的 XSS 攻击，这可能会影响高权限用户。这已在 WordPress 版本 5.8.3 中进行了修补。受影响的旧版本也通过安全版本修复，可以追溯到 3.7.37。我们强烈建议您保持启用自动更新。此问题没有已知的解决方法。</p>
+</blockquote>
+<h2 id="CVE-2022-21663"><a href="#CVE-2022-21663" class="headerlink" title="CVE-2022-21663 "></a>CVE-2022-21663 <img src="https://img.shields.io/badge/score-7.2-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/07-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>WordPress 是一个免费的开源内容管理系统，用 PHP 编写并与 MariaDB 数据库配对。在多站点上，具有超级管理员角色的用户可以在某些条件下通过对象注入绕过显式/附加强化。这已在 WordPress 版本 5.8.3 中进行了修补。受影响的旧版本也通过安全版本修复，可以追溯到 3.7.37。我们强烈建议您保持启用自动更新。此问题没有已知的解决方法。</p>
+</blockquote>
+<h2 id="CVE-2022-21664"><a href="#CVE-2022-21664" class="headerlink" title="CVE-2022-21664 "></a>CVE-2022-21664 <img src="https://img.shields.io/badge/score-8.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/07-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>WordPress 是一个免费的开源内容管理系统，用 PHP 编写并与 MariaDB 数据库配对。由于其中一个类缺乏适当的清理，可能会执行意外的 SQL 查询。这已在 WordPress 版本 5.8.3 中进行了修补。受影响的旧版本也通过安全版本修复，可以追溯到 4.1.34。我们强烈建议您保持启用自动更新。此问题没有已知的解决方法。</p>
+</blockquote>
+<h2 id="CVE-2022-0128"><a href="#CVE-2022-0128" class="headerlink" title="CVE-2022-0128 "></a>CVE-2022-0128 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/07-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>vim 容易受到越界读取的影响</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0128">https://nvd.nist.gov/vuln/detail/CVE-2022-0128</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/03/30 05:12-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-22707"><a href="#CVE-2022-22707" class="headerlink" title="CVE-2022-22707 "></a>CVE-2022-22707 <img src="https://img.shields.io/badge/score-5.9-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/06-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 lighttpd 1.4.46 到 1.4.63 中，mod_extforward 插件的 mod_extforward_Forwarded 函数具有基于堆栈的缓冲区溢出（4 个字节表示 -1），如非默认配置中的远程拒绝服务（守护进程崩溃）所示。非默认配置需要以某种不寻常的方式处理 Forwarded 标头。此外，32 位系统比 64 位系统更容易受到影响。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-22707">https://nvd.nist.gov/vuln/detail/CVE-2022-22707</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/14 04:52-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-0122"><a href="#CVE-2022-0122" class="headerlink" title="CVE-2022-0122 "></a>CVE-2022-0122 <img src="https://img.shields.io/badge/score-6.1-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/06-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>forge 容易受到 URL 重定向到不受信任站点的攻击</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0122">https://nvd.nist.gov/vuln/detail/CVE-2022-0122</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/13 04:14-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-22704"><a href="#CVE-2022-22704" class="headerlink" title="CVE-2022-22704 "></a>CVE-2022-22704 <img src="https://img.shields.io/badge/score-9.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/06-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>用于 Alpine Linux 的 5.4.9-r1 之前的 zabbix-agent2 软件包有时允许将权限提升到 root，因为设计错误地预期 systemd 将（实际上）确定部分配置。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-22704">https://nvd.nist.gov/vuln/detail/CVE-2022-22704</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/02/01 02:09-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-0121"><a href="#CVE-2022-0121" class="headerlink" title="CVE-2022-0121 "></a>CVE-2022-0121 <img src="https://img.shields.io/badge/score-8.0-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/06-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>hoppscotch 容易将敏感信息暴露给未经授权的行为者</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0121">https://nvd.nist.gov/vuln/detail/CVE-2022-0121</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/13 02:29-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-21653"><a href="#CVE-2022-21653" class="headerlink" title="CVE-2022-21653 "></a>CVE-2022-21653 <img src="https://img.shields.io/badge/score-7.5-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/06-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Jawn 是一个开源的 JSON 解析器。不覆盖 <code>objectContext()</code> 的 <code>org.typelevel.jawn.SimpleFacade</code> 和 <code>org.typelevel.jawn.MutableFacade</code> 的扩展程序容易受到哈希冲突攻击，这可能导致拒绝服务。大多数应用程序不直接实现这些特征，而是从库继承。 <code>jawn-parser-1.3.1</code> 修复了这个问题，建议用户升级。对于无法升级覆盖 <code>objectContext()</code> 以使用碰撞安全集合的用户。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-21653">https://nvd.nist.gov/vuln/detail/CVE-2022-21653</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/13 02:54-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-21651"><a href="#CVE-2022-21651" class="headerlink" title="CVE-2022-21651 "></a>CVE-2022-21651 <img src="https://img.shields.io/badge/score-6.1-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/06-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Shopware 是一个开源电子商务软件平台。发现了一个开放重定向漏洞。由于商店软件路由器中的 URL 处理不完整，用户可能会被任意重定向。此问题已在版本 5.7.7 中得到解决。没有变通方法，建议用户尽快升级。</p>
+</blockquote>
+<h2 id="CVE-2022-21652"><a href="#CVE-2022-21652" class="headerlink" title="CVE-2022-21652 "></a>CVE-2022-21652 <img src="https://img.shields.io/badge/score-8.1-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/06-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Shopware 是一个开源电子商务软件平台。在受影响的版本中，商店软件不会在密码更改时使用户会话无效。在 5.7.7 版中，会话验证进行了调整，因此在客户帐户的最新密码更改之前创建的会话不能用于使用该帐户登录。这也意味着，在更改密码后，给定客户帐户的所有现有会话都将自动被视为无效。没有解决此问题的方法。</p>
+</blockquote>
+<h2 id="CVE-2022-21642"><a href="#CVE-2022-21642" class="headerlink" title="CVE-2022-21642 "></a>CVE-2022-21642 <img src="https://img.shields.io/badge/score-4.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/06-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Discourse 是一个用于社区讨论的开源平台。在受影响的版本中，从主题撰写消息时，作曲家用户建议会显示耳语参与者。该问题已在稳定版 2.7.13 和 beta 版 2.8.0.beta11 中修复。此问题没有解决方法，建议用户升级。</p>
+</blockquote>
+<h2 id="CVE-2022-22107"><a href="#CVE-2022-22107" class="headerlink" title="CVE-2022-22107 "></a>CVE-2022-22107 <img src="https://img.shields.io/badge/score-4.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 Daybyday CRM 中，版本 2.0.0 到 2.2.0 容易受到缺少授权的影响。拥有最低权限帐户（员工类型用户）的攻击者可以查看系统中所有用户的约会，包括管理员。但是，这种类型的用户根本无权查看日历。</p>
+</blockquote>
+<h2 id="CVE-2022-22108"><a href="#CVE-2022-22108" class="headerlink" title="CVE-2022-22108 "></a>CVE-2022-22108 <img src="https://img.shields.io/badge/score-4.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 Daybyday CRM 中，版本 2.0.0 到 2.2.0 容易受到缺少授权的影响。拥有最低权限帐户（员工类型用户）的攻击者可以查看系统中所有用户（包括管理员）的缺勤情况。此类用户无权查看此类信息。</p>
+</blockquote>
+<h2 id="CVE-2022-22109"><a href="#CVE-2022-22109" class="headerlink" title="CVE-2022-22109 "></a>CVE-2022-22109 <img src="https://img.shields.io/badge/score-5.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 Daybyday CRM 中，2.2.0 版易受存储跨站点脚本 (XSS) 漏洞的攻击，该漏洞允许低权限应用程序用户在新任务的标题字段中存储恶意脚本。当受害者打开“/tasks”页面查看所有任务时，这些脚本会在受害者的浏览器中执行。</p>
+</blockquote>
+<h2 id="CVE-2022-22110"><a href="#CVE-2022-22110" class="headerlink" title="CVE-2022-22110 "></a>CVE-2022-22110 <img src="https://img.shields.io/badge/score-7.5-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 Daybyday CRM 中，版本 1.1 到 2.2.0 在用户更新功能中强制执行弱密码要求。有权更新其密码的用户可以将其更改为弱密码，例如长度为单个字符的密码。这可能允许攻击者以最少甚至没有计算工作量来暴力破解用户的密码。</p>
+</blockquote>
+<h2 id="CVE-2022-22111"><a href="#CVE-2022-22111" class="headerlink" title="CVE-2022-22111 "></a>CVE-2022-22111 <img src="https://img.shields.io/badge/score-8.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 DayByDay CRM 中，版本 2.2.0 容易丢失授权。应用程序中启用更新用户权限的任何应用程序用户都可以更改其他用户的密码，包括管理员的密码。这允许攻击者访问应用程序中的最高权限用户。</p>
+</blockquote>
+<h2 id="CVE-2022-21649"><a href="#CVE-2022-21649" class="headerlink" title="CVE-2022-21649 "></a>CVE-2022-21649 <img src="https://img.shields.io/badge/score-5.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Convos 是一个在网络浏览器中运行的开源多用户聊天。聊天窗口中以“https://”开头的字符会创建一个 <code>&lt;</code>a<code>&gt;</code> 标签。使用 onfocus 和 autofocus 的存储型 XSS 漏洞发生是因为“<code>&lt;</code>”或“<code>&gt;</code>”存在转义但不存在双引号的转义。通过此漏洞，攻击者能够执行恶意脚本。建议用户尽快更新。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-21649">https://nvd.nist.gov/vuln/detail/CVE-2022-21649</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/08 10:46-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-21650"><a href="#CVE-2022-21650" class="headerlink" title="CVE-2022-21650 "></a>CVE-2022-21650 <img src="https://img.shields.io/badge/score-5.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Convos 是一个在网络浏览器中运行的开源多用户聊天。您不能在 Convos 的聊天窗口中使用 SVG 扩展名，但您可以上传带有 .html 扩展名的文件。通过上传带有 html 扩展名的 SVG 文件，可以绕过上传过滤器。这会导致存储型 XSS。此外，在上传文件后，XSS 攻击会在用户查看文件时触发。通过此漏洞，攻击者能够执行恶意脚本。建议用户尽快更新。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-21650">https://nvd.nist.gov/vuln/detail/CVE-2022-21650</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/12 05:48-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-21643"><a href="#CVE-2022-21643" class="headerlink" title="CVE-2022-21643 "></a>CVE-2022-21643 <img src="https://img.shields.io/badge/score-9.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>USOC 是一个专注于简单性的开源 CMS。在受影响的版本中，USOC 允许通过 register.php 进行 SQL 注入。特别是用户提供的用户名、电子邮件地址和密码没有经过清理，而是直接用于构建 sql 语句。建议用户尽快升级。此问题没有解决方法。</p>
+</blockquote>
+<h2 id="CVE-2022-21644"><a href="#CVE-2022-21644" class="headerlink" title="CVE-2022-21644 "></a>CVE-2022-21644 <img src="https://img.shields.io/badge/score-7.2-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>USOC 是一个专注于简单性的开源 CMS。在受影响的版本中，USOC 允许通过 usersearch.php 进行 SQL 注入。用户提供的搜索词没有经过过滤，直接用于构建 sql 语句。唯一允许搜索的用户是站点管理员。建议用户尽快升级。此问题没有解决方法。</p>
+</blockquote>
+<h2 id="CVE-2022-21647"><a href="#CVE-2022-21647" class="headerlink" title="CVE-2022-21647 "></a>CVE-2022-21647 <img src="https://img.shields.io/badge/score-9.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>CodeIgniter 是一个开源的 PHP 全栈 Web 框架。在 CodeIgniter4 的 <code>old()</code> 函数中发现了不可信数据的反序列化。远程攻击者可能会利用此漏洞注入可自动加载的任意对象，并可能在服务器上执行现有的 PHP 代码。我们知道一个有效的漏洞利用，它可能导致 SQL 注入。建议用户升级到 v4.1.6 或更高版本。用户无法升级，建议不要使用 <code>old()</code> 函数和 form_helper，也不要使用 <code>RedirectResponse::withInput()</code> 和 <code>redirect()-</code>&gt;<code>withInput()</code>。</p>
+</blockquote>
+<h2 id="CVE-2022-21648"><a href="#CVE-2022-21648" class="headerlink" title="CVE-2022-21648 "></a>CVE-2022-21648 <img src="https://img.shields.io/badge/score-6.1-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Latte 是 PHP 的开源模板引擎。自 2.8.0 Latte 起的版本包含一个模板沙箱，在受影响的版本中，发现存在沙箱逃逸，允许注入从 Latte 生成的网页中。这可能会导致 XSS 攻击。该问题已在 2.8.8、2.9.6 和 2.10.8 版本中得到修复。无法升级的用户不应接受来自不受信任来源的模板输入。</p>
+</blockquote>
+<h2 id="CVE-2022-0086"><a href="#CVE-2022-0086" class="headerlink" title="CVE-2022-0086 "></a>CVE-2022-0086 <img src="https://img.shields.io/badge/score-9.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>uppy 容易受到服务器端请求伪造 (SSRF) 的攻击</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0086">https://nvd.nist.gov/vuln/detail/CVE-2022-0086</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/08 10:44-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-20012"><a href="#CVE-2022-20012" class="headerlink" title="CVE-2022-20012 "></a>CVE-2022-20012 <img src="https://img.shields.io/badge/score-7.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 mdp 驱动程序中，由于整数溢出，可能会导致内存损坏。这可能会导致本地权限升级，而无需额外的执行权限。开发不需要用户交互。补丁号：ALPS05836478；问题 ID：ALPS05836478。</p>
+</blockquote>
+<h2 id="CVE-2022-20013"><a href="#CVE-2022-20013" class="headerlink" title="CVE-2022-20013 "></a>CVE-2022-20013 <img src="https://img.shields.io/badge/score-6.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 vow 驱动程序中，由于竞争条件，可能存在内存损坏。这可能导致需要系统执行权限的本地权限升级。开发不需要用户交互。补丁编号：ALPS05837742；问题 ID：ALPS05837742。</p>
+</blockquote>
+<h2 id="CVE-2022-20014"><a href="#CVE-2022-20014" class="headerlink" title="CVE-2022-20014 "></a>CVE-2022-20014 <img src="https://img.shields.io/badge/score-6.7-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 vow 驱动程序中，由于输入验证不正确，可能会导致内存损坏。这可能导致需要系统执行权限的本地权限升级。开发不需要用户交互。补丁编号：ALPS05857308；问题 ID：ALPS05857308。</p>
+</blockquote>
+<h2 id="CVE-2022-20015"><a href="#CVE-2022-20015" class="headerlink" title="CVE-2022-20015 "></a>CVE-2022-20015 <img src="https://img.shields.io/badge/score-4.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 kd_camera_hw 驱动程序中，由于未初始化的数据，可能存在信息泄露。这可能导致需要系统执行权限的本地信息泄露。开发不需要用户交互。补丁号：ALPS05862966；问题 ID：ALPS05862966。</p>
+</blockquote>
+<h2 id="CVE-2022-20016"><a href="#CVE-2022-20016" class="headerlink" title="CVE-2022-20016 "></a>CVE-2022-20016 <img src="https://img.shields.io/badge/score-6.7-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 vow 驱动程序中，由于锁定不当，可能会导致内存损坏。这可能导致需要系统执行权限的本地权限升级。开发不需要用户交互。补丁号：ALPS05862986；问题 ID：ALPS05862986。</p>
+</blockquote>
+<h2 id="CVE-2022-20018"><a href="#CVE-2022-20018" class="headerlink" title="CVE-2022-20018 "></a>CVE-2022-20018 <img src="https://img.shields.io/badge/score-4.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在seninf驱动中，由于未初始化的数据，可能存在信息泄露。这可能导致需要系统执行权限的本地信息泄露。开发不需要用户交互。补丁编号：ALPS05863018；问题 ID：ALPS05863018。</p>
+</blockquote>
+<h2 id="CVE-2022-20019"><a href="#CVE-2022-20019" class="headerlink" title="CVE-2022-20019 "></a>CVE-2022-20019 <img src="https://img.shields.io/badge/score-5.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 libMtkOmxGsmDec 中，由于边界检查不正确，可能会导致信息泄露。这可能会导致本地信息泄露，而无需额外的执行权限。开发不需要用户交互。补丁编号：ALPS05917620；问题 ID：ALPS05917620。</p>
+</blockquote>
+<h2 id="CVE-2022-20020"><a href="#CVE-2022-20020" class="headerlink" title="CVE-2022-20020 "></a>CVE-2022-20020 <img src="https://img.shields.io/badge/score-5.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在 libvcodecdrv 中，由于缺少边界检查，可能会导致信息泄露。这可能会导致本地信息泄露，而无需额外的执行权限。开发不需要用户交互。补丁编号：ALPS05943906；问题 ID：ALPS05943906。</p>
+</blockquote>
+<h2 id="CVE-2022-20021"><a href="#CVE-2022-20021" class="headerlink" title="CVE-2022-20021 "></a>CVE-2022-20021 <img src="https://img.shields.io/badge/score-6.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在蓝牙中，由于蓝牙无法正确处理多个 LMP_host_connection_req 的接收，可能会导致应用程序崩溃。这可能导致不需要额外执行权限的蓝牙远程拒绝服务。开发不需要用户交互。补丁号：ALPS06198513；问题 ID：ALPS06198513。</p>
+</blockquote>
+<h2 id="CVE-2022-20022"><a href="#CVE-2022-20022" class="headerlink" title="CVE-2022-20022 "></a>CVE-2022-20022 <img src="https://img.shields.io/badge/score-6.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在蓝牙中，由于蓝牙无法正确处理来自与当前连接的 BT 主机具有相同 BD 地址的主机的连接尝试，可能会导致链接断开。这可能导致不需要额外执行权限的蓝牙远程拒绝服务。开发不需要用户交互。补丁号：ALPS06198578；问题 ID：ALPS06198578。</p>
+</blockquote>
+<h2 id="CVE-2022-20023"><a href="#CVE-2022-20023" class="headerlink" title="CVE-2022-20023 "></a>CVE-2022-20023 <img src="https://img.shields.io/badge/score-6.5-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/05-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>在蓝牙中，由于蓝牙使用 LMP_AU_rand 数据包淹没设备，可能会导致应用程序崩溃。这可能导致不需要额外执行权限的蓝牙远程拒绝服务。开发不需要用户交互。补丁号：ALPS06198608；问题 ID：ALPS06198608。</p>
+</blockquote>
+<h2 id="CVE-2022-0083"><a href="#CVE-2022-0083" class="headerlink" title="CVE-2022-0083 "></a>CVE-2022-0083 <img src="https://img.shields.io/badge/score-5.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/04-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>livehelperchat 容易产生包含敏感信息的错误消息</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0083">https://nvd.nist.gov/vuln/detail/CVE-2022-0083</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/12 04:09-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-0079"><a href="#CVE-2022-0079" class="headerlink" title="CVE-2022-0079 "></a>CVE-2022-0079 <img src="https://img.shields.io/badge/score-5.3-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/03-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>showdoc 容易产生包含敏感信息的错误消息</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0079">https://nvd.nist.gov/vuln/detail/CVE-2022-0079</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/11 05:29-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-0080"><a href="#CVE-2022-0080" class="headerlink" title="CVE-2022-0080 "></a>CVE-2022-0080 <img src="https://img.shields.io/badge/score-9.8-red" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/02-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>mruby 容易受到基于堆的缓冲区溢出的影响</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-0080">https://nvd.nist.gov/vuln/detail/CVE-2022-0080</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/01/11 22:22-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+<h2 id="CVE-2022-22293"><a href="#CVE-2022-22293" class="headerlink" title="CVE-2022-22293 "></a>CVE-2022-22293 <img src="https://img.shields.io/badge/score-5.4-yellow" alt="score" style="display: inline-block;margin: 0 auto -4px;"><img src="https://img.shields.io/badge/2022/01/02-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></h2><blockquote>
+<p>Dolibarr 7.0.2 中的 admin/limits.php 允许 HTML 注入，如 MAIN_MAX_DECIMALS_TOT 参数所示。</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nvd.nist.gov/vuln/detail/CVE-2022-22293">https://nvd.nist.gov/vuln/detail/CVE-2022-22293</a>  <img src="https://img.shields.io/badge/nvd-exp-green" alt="nvd" style="display: inline-block;margin: 0 auto -4px;"> <img src="https://img.shields.io/badge/update-2022/03/03 10:15-blue" alt="date" style="display: inline-block;margin: 0 auto -4px;"></li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="https://vulth.sly.io">FALSE</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://vulth.sly.io/2022/readme-vul-05/">https://vulth.sly.io/2022/readme-vul-05/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://vulth.sly.io" target="_blank">vulthreat</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/CVE-EXP/">CVE&amp;EXP</a><a class="post-meta__tags" href="/tags/2022CVE-EXP/">2022CVE&amp;EXP</a></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/readme-exp-01/"><img class="prev-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">2021年EXP信息(1)</div></div></a></div><div class="next-post pull-right"><a href="/2022/readme-vul-04/"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">2022年CVE&amp;EXP信息(4)</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/readme-vul-01/" title="2022年CVE&amp;EXP信息(1)"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-18</div><div class="title">2022年CVE&amp;EXP信息(1)</div></div></a></div><div><a href="/2022/readme-vul-04/" title="2022年CVE&amp;EXP信息(4)"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-18</div><div class="title">2022年CVE&amp;EXP信息(4)</div></div></a></div><div><a href="/2022/readme-vul-03/" title="2022年CVE&amp;EXP信息(3)"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-18</div><div class="title">2022年CVE&amp;EXP信息(3)</div></div></a></div><div><a href="/2022/readme-vul-02/" title="2022年CVE&amp;EXP信息(2)"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-18</div><div class="title">2022年CVE&amp;EXP信息(2)</div></div></a></div><div><a href="/2021/readme-vul-05/" title="2021年CVE&amp;EXP信息(5)"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-18</div><div class="title">2021年CVE&amp;EXP信息(5)</div></div></a></div><div><a href="/2021/readme-vul-02/" title="2021年CVE&amp;EXP信息(2)"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-18</div><div class="title">2021年CVE&amp;EXP信息(2)</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">FALSE</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">41</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21873"><span class="toc-number">1.</span> <span class="toc-text">CVE-2022-21873 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21874"><span class="toc-number">2.</span> <span class="toc-text">CVE-2022-21874 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21875"><span class="toc-number">3.</span> <span class="toc-text">CVE-2022-21875 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21876"><span class="toc-number">4.</span> <span class="toc-text">CVE-2022-21876 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21877"><span class="toc-number">5.</span> <span class="toc-text">CVE-2022-21877 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21878"><span class="toc-number">6.</span> <span class="toc-text">CVE-2022-21878 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21879"><span class="toc-number">7.</span> <span class="toc-text">CVE-2022-21879 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21880"><span class="toc-number">8.</span> <span class="toc-text">CVE-2022-21880 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21881"><span class="toc-number">9.</span> <span class="toc-text">CVE-2022-21881 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21882"><span class="toc-number">10.</span> <span class="toc-text">CVE-2022-21882 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21883"><span class="toc-number">11.</span> <span class="toc-text">CVE-2022-21883 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21884"><span class="toc-number">12.</span> <span class="toc-text">CVE-2022-21884 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21885"><span class="toc-number">13.</span> <span class="toc-text">CVE-2022-21885 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21887"><span class="toc-number">14.</span> <span class="toc-text">CVE-2022-21887 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21888"><span class="toc-number">15.</span> <span class="toc-text">CVE-2022-21888 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21889"><span class="toc-number">16.</span> <span class="toc-text">CVE-2022-21889 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21890"><span class="toc-number">17.</span> <span class="toc-text">CVE-2022-21890 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21891"><span class="toc-number">18.</span> <span class="toc-text">CVE-2022-21891 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21892"><span class="toc-number">19.</span> <span class="toc-text">CVE-2022-21892 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21893"><span class="toc-number">20.</span> <span class="toc-text">CVE-2022-21893 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21894"><span class="toc-number">21.</span> <span class="toc-text">CVE-2022-21894 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21895"><span class="toc-number">22.</span> <span class="toc-text">CVE-2022-21895 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21896"><span class="toc-number">23.</span> <span class="toc-text">CVE-2022-21896 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21897"><span class="toc-number">24.</span> <span class="toc-text">CVE-2022-21897 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21898"><span class="toc-number">25.</span> <span class="toc-text">CVE-2022-21898 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21899"><span class="toc-number">26.</span> <span class="toc-text">CVE-2022-21899 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21900"><span class="toc-number">27.</span> <span class="toc-text">CVE-2022-21900 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21901"><span class="toc-number">28.</span> <span class="toc-text">CVE-2022-21901 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21902"><span class="toc-number">29.</span> <span class="toc-text">CVE-2022-21902 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21903"><span class="toc-number">30.</span> <span class="toc-text">CVE-2022-21903 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21904"><span class="toc-number">31.</span> <span class="toc-text">CVE-2022-21904 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21905"><span class="toc-number">32.</span> <span class="toc-text">CVE-2022-21905 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21906"><span class="toc-number">33.</span> <span class="toc-text">CVE-2022-21906 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21907"><span class="toc-number">34.</span> <span class="toc-text">CVE-2022-21907 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21908"><span class="toc-number">35.</span> <span class="toc-text">CVE-2022-21908 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21910"><span class="toc-number">36.</span> <span class="toc-text">CVE-2022-21910 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21911"><span class="toc-number">37.</span> <span class="toc-text">CVE-2022-21911 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21912"><span class="toc-number">38.</span> <span class="toc-text">CVE-2022-21912 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21913"><span class="toc-number">39.</span> <span class="toc-text">CVE-2022-21913 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21914"><span class="toc-number">40.</span> <span class="toc-text">CVE-2022-21914 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21915"><span class="toc-number">41.</span> <span class="toc-text">CVE-2022-21915 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21916"><span class="toc-number">42.</span> <span class="toc-text">CVE-2022-21916 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21917"><span class="toc-number">43.</span> <span class="toc-text">CVE-2022-21917 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21918"><span class="toc-number">44.</span> <span class="toc-text">CVE-2022-21918 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21919"><span class="toc-number">45.</span> <span class="toc-text">CVE-2022-21919 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21920"><span class="toc-number">46.</span> <span class="toc-text">CVE-2022-21920 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21921"><span class="toc-number">47.</span> <span class="toc-text">CVE-2022-21921 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21922"><span class="toc-number">48.</span> <span class="toc-text">CVE-2022-21922 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21924"><span class="toc-number">49.</span> <span class="toc-text">CVE-2022-21924 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21925"><span class="toc-number">50.</span> <span class="toc-text">CVE-2022-21925 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21928"><span class="toc-number">51.</span> <span class="toc-text">CVE-2022-21928 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21929"><span class="toc-number">52.</span> <span class="toc-text">CVE-2022-21929 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21930"><span class="toc-number">53.</span> <span class="toc-text">CVE-2022-21930 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21931"><span class="toc-number">54.</span> <span class="toc-text">CVE-2022-21931 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21932"><span class="toc-number">55.</span> <span class="toc-text">CVE-2022-21932 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21954"><span class="toc-number">56.</span> <span class="toc-text">CVE-2022-21954 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21958"><span class="toc-number">57.</span> <span class="toc-text">CVE-2022-21958 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21959"><span class="toc-number">58.</span> <span class="toc-text">CVE-2022-21959 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21960"><span class="toc-number">59.</span> <span class="toc-text">CVE-2022-21960 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21961"><span class="toc-number">60.</span> <span class="toc-text">CVE-2022-21961 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21962"><span class="toc-number">61.</span> <span class="toc-text">CVE-2022-21962 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21963"><span class="toc-number">62.</span> <span class="toc-text">CVE-2022-21963 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21964"><span class="toc-number">63.</span> <span class="toc-text">CVE-2022-21964 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21969"><span class="toc-number">64.</span> <span class="toc-text">CVE-2022-21969 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21970"><span class="toc-number">65.</span> <span class="toc-text">CVE-2022-21970 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0129"><span class="toc-number">66.</span> <span class="toc-text">CVE-2022-0129 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0173"><span class="toc-number">67.</span> <span class="toc-text">CVE-2022-0173 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0170"><span class="toc-number">68.</span> <span class="toc-text">CVE-2022-0170 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21669"><span class="toc-number">69.</span> <span class="toc-text">CVE-2022-21669 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21671"><span class="toc-number">70.</span> <span class="toc-text">CVE-2022-21671 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0144"><span class="toc-number">71.</span> <span class="toc-text">CVE-2022-0144 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21668"><span class="toc-number">72.</span> <span class="toc-text">CVE-2022-21668 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21670"><span class="toc-number">73.</span> <span class="toc-text">CVE-2022-21670 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21672"><span class="toc-number">74.</span> <span class="toc-text">CVE-2022-21672 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0155"><span class="toc-number">75.</span> <span class="toc-text">CVE-2022-0155 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21666"><span class="toc-number">76.</span> <span class="toc-text">CVE-2022-21666 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0174"><span class="toc-number">77.</span> <span class="toc-text">CVE-2022-0174 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0156"><span class="toc-number">78.</span> <span class="toc-text">CVE-2022-0156 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0157"><span class="toc-number">79.</span> <span class="toc-text">CVE-2022-0157 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0158"><span class="toc-number">80.</span> <span class="toc-text">CVE-2022-0158 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22114"><span class="toc-number">81.</span> <span class="toc-text">CVE-2022-22114 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22115"><span class="toc-number">82.</span> <span class="toc-text">CVE-2022-22115 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22116"><span class="toc-number">83.</span> <span class="toc-text">CVE-2022-22116 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22117"><span class="toc-number">84.</span> <span class="toc-text">CVE-2022-22117 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22120"><span class="toc-number">85.</span> <span class="toc-text">CVE-2022-22120 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22121"><span class="toc-number">86.</span> <span class="toc-text">CVE-2022-22121 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22844"><span class="toc-number">87.</span> <span class="toc-text">CVE-2022-22844 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22817"><span class="toc-number">88.</span> <span class="toc-text">CVE-2022-22817 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0132"><span class="toc-number">89.</span> <span class="toc-text">CVE-2022-0132 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0133"><span class="toc-number">90.</span> <span class="toc-text">CVE-2022-0133 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21667"><span class="toc-number">91.</span> <span class="toc-text">CVE-2022-21667 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21823"><span class="toc-number">92.</span> <span class="toc-text">CVE-2022-21823 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22263"><span class="toc-number">93.</span> <span class="toc-text">CVE-2022-22263 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22264"><span class="toc-number">94.</span> <span class="toc-text">CVE-2022-22264 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22265"><span class="toc-number">95.</span> <span class="toc-text">CVE-2022-22265 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22266"><span class="toc-number">96.</span> <span class="toc-text">CVE-2022-22266 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22267"><span class="toc-number">97.</span> <span class="toc-text">CVE-2022-22267 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22268"><span class="toc-number">98.</span> <span class="toc-text">CVE-2022-22268 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22269"><span class="toc-number">99.</span> <span class="toc-text">CVE-2022-22269 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22270"><span class="toc-number">100.</span> <span class="toc-text">CVE-2022-22270 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22271"><span class="toc-number">101.</span> <span class="toc-text">CVE-2022-22271 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22272"><span class="toc-number">102.</span> <span class="toc-text">CVE-2022-22272 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22283"><span class="toc-number">103.</span> <span class="toc-text">CVE-2022-22283 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22284"><span class="toc-number">104.</span> <span class="toc-text">CVE-2022-22284 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22285"><span class="toc-number">105.</span> <span class="toc-text">CVE-2022-22285 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22286"><span class="toc-number">106.</span> <span class="toc-text">CVE-2022-22286 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22287"><span class="toc-number">107.</span> <span class="toc-text">CVE-2022-22287 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22288"><span class="toc-number">108.</span> <span class="toc-text">CVE-2022-22288 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22289"><span class="toc-number">109.</span> <span class="toc-text">CVE-2022-22289 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22701"><span class="toc-number">110.</span> <span class="toc-text">CVE-2022-22701 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22702"><span class="toc-number">111.</span> <span class="toc-text">CVE-2022-22702 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22815"><span class="toc-number">112.</span> <span class="toc-text">CVE-2022-22815 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22816"><span class="toc-number">113.</span> <span class="toc-text">CVE-2022-22816 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22821"><span class="toc-number">114.</span> <span class="toc-text">CVE-2022-22821 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22822"><span class="toc-number">115.</span> <span class="toc-text">CVE-2022-22822 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22823"><span class="toc-number">116.</span> <span class="toc-text">CVE-2022-22823 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22824"><span class="toc-number">117.</span> <span class="toc-text">CVE-2022-22824 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22825"><span class="toc-number">118.</span> <span class="toc-text">CVE-2022-22825 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22826"><span class="toc-number">119.</span> <span class="toc-text">CVE-2022-22826 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22827"><span class="toc-number">120.</span> <span class="toc-text">CVE-2022-22827 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22836"><span class="toc-number">121.</span> <span class="toc-text">CVE-2022-22836 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22845"><span class="toc-number">122.</span> <span class="toc-text">CVE-2022-22845 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22846"><span class="toc-number">123.</span> <span class="toc-text">CVE-2022-22846 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22847"><span class="toc-number">124.</span> <span class="toc-text">CVE-2022-22847 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21661"><span class="toc-number">125.</span> <span class="toc-text">CVE-2022-21661 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21662"><span class="toc-number">126.</span> <span class="toc-text">CVE-2022-21662 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21663"><span class="toc-number">127.</span> <span class="toc-text">CVE-2022-21663 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21664"><span class="toc-number">128.</span> <span class="toc-text">CVE-2022-21664 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0128"><span class="toc-number">129.</span> <span class="toc-text">CVE-2022-0128 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22707"><span class="toc-number">130.</span> <span class="toc-text">CVE-2022-22707 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0122"><span class="toc-number">131.</span> <span class="toc-text">CVE-2022-0122 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22704"><span class="toc-number">132.</span> <span class="toc-text">CVE-2022-22704 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0121"><span class="toc-number">133.</span> <span class="toc-text">CVE-2022-0121 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21653"><span class="toc-number">134.</span> <span class="toc-text">CVE-2022-21653 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21651"><span class="toc-number">135.</span> <span class="toc-text">CVE-2022-21651 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21652"><span class="toc-number">136.</span> <span class="toc-text">CVE-2022-21652 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21642"><span class="toc-number">137.</span> <span class="toc-text">CVE-2022-21642 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22107"><span class="toc-number">138.</span> <span class="toc-text">CVE-2022-22107 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22108"><span class="toc-number">139.</span> <span class="toc-text">CVE-2022-22108 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22109"><span class="toc-number">140.</span> <span class="toc-text">CVE-2022-22109 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22110"><span class="toc-number">141.</span> <span class="toc-text">CVE-2022-22110 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22111"><span class="toc-number">142.</span> <span class="toc-text">CVE-2022-22111 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21649"><span class="toc-number">143.</span> <span class="toc-text">CVE-2022-21649 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21650"><span class="toc-number">144.</span> <span class="toc-text">CVE-2022-21650 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21643"><span class="toc-number">145.</span> <span class="toc-text">CVE-2022-21643 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21644"><span class="toc-number">146.</span> <span class="toc-text">CVE-2022-21644 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21647"><span class="toc-number">147.</span> <span class="toc-text">CVE-2022-21647 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-21648"><span class="toc-number">148.</span> <span class="toc-text">CVE-2022-21648 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0086"><span class="toc-number">149.</span> <span class="toc-text">CVE-2022-0086 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-20012"><span class="toc-number">150.</span> <span class="toc-text">CVE-2022-20012 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-20013"><span class="toc-number">151.</span> <span class="toc-text">CVE-2022-20013 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-20014"><span class="toc-number">152.</span> <span class="toc-text">CVE-2022-20014 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-20015"><span class="toc-number">153.</span> <span class="toc-text">CVE-2022-20015 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-20016"><span class="toc-number">154.</span> <span class="toc-text">CVE-2022-20016 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-20018"><span class="toc-number">155.</span> <span class="toc-text">CVE-2022-20018 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-20019"><span class="toc-number">156.</span> <span class="toc-text">CVE-2022-20019 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-20020"><span class="toc-number">157.</span> <span class="toc-text">CVE-2022-20020 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-20021"><span class="toc-number">158.</span> <span class="toc-text">CVE-2022-20021 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-20022"><span class="toc-number">159.</span> <span class="toc-text">CVE-2022-20022 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-20023"><span class="toc-number">160.</span> <span class="toc-text">CVE-2022-20023 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0083"><span class="toc-number">161.</span> <span class="toc-text">CVE-2022-0083 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0079"><span class="toc-number">162.</span> <span class="toc-text">CVE-2022-0079 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-0080"><span class="toc-number">163.</span> <span class="toc-text">CVE-2022-0080 </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CVE-2022-22293"><span class="toc-number">164.</span> <span class="toc-text">CVE-2022-22293 </span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/readme-vul-01/" title="2022年CVE&amp;EXP信息(1)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(1)"/></a><div class="content"><a class="title" href="/2022/readme-vul-01/" title="2022年CVE&amp;EXP信息(1)">2022年CVE&amp;EXP信息(1)</a><time datetime="2022-04-18T03:08:04.826Z" title="发表于 2022-04-18 11:08:04">2022-04-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/readme-exp-01/" title="2022年EXP信息(1)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年EXP信息(1)"/></a><div class="content"><a class="title" href="/2022/readme-exp-01/" title="2022年EXP信息(1)">2022年EXP信息(1)</a><time datetime="2022-04-18T03:08:04.819Z" title="发表于 2022-04-18 11:08:04">2022-04-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/readme-vul-05/" title="2021年CVE&amp;EXP信息(5)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2021年CVE&amp;EXP信息(5)"/></a><div class="content"><a class="title" href="/2021/readme-vul-05/" title="2021年CVE&amp;EXP信息(5)">2021年CVE&amp;EXP信息(5)</a><time datetime="2022-04-18T03:08:04.764Z" title="发表于 2022-04-18 11:08:04">2022-04-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/readme-vul-02/" title="2021年CVE&amp;EXP信息(2)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2021年CVE&amp;EXP信息(2)"/></a><div class="content"><a class="title" href="/2021/readme-vul-02/" title="2021年CVE&amp;EXP信息(2)">2021年CVE&amp;EXP信息(2)</a><time datetime="2022-04-18T03:08:04.755Z" title="发表于 2022-04-18 11:08:04">2022-04-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/readme-vul-01/" title="2021年CVE&amp;EXP信息(1)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2021年CVE&amp;EXP信息(1)"/></a><div class="content"><a class="title" href="/2021/readme-vul-01/" title="2021年CVE&amp;EXP信息(1)">2021年CVE&amp;EXP信息(1)</a><time datetime="2022-04-18T03:08:04.752Z" title="发表于 2022-04-18 11:08:04">2022-04-18</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By FALSE</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
