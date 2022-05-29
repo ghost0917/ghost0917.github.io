@@ -229,7 +229,7 @@
 
   <url>
     <loc>https://vulth.sly.io/</loc>
-    <lastmod>2022-05-28</lastmod>
+    <lastmod>2022-05-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -237,56 +237,56 @@
   
   <url>
     <loc>https://vulth.sly.io/tags/FOCUS/</loc>
-    <lastmod>2022-05-28</lastmod>
+    <lastmod>2022-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vulth.sly.io/tags/NEWS/</loc>
-    <lastmod>2022-05-28</lastmod>
+    <lastmod>2022-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vulth.sly.io/tags/2022NEWS/</loc>
-    <lastmod>2022-05-28</lastmod>
+    <lastmod>2022-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vulth.sly.io/tags/CVE-EXP/</loc>
-    <lastmod>2022-05-28</lastmod>
+    <lastmod>2022-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vulth.sly.io/tags/2022CVE-EXP/</loc>
-    <lastmod>2022-05-28</lastmod>
+    <lastmod>2022-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vulth.sly.io/tags/EXP/</loc>
-    <lastmod>2022-05-28</lastmod>
+    <lastmod>2022-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vulth.sly.io/tags/2022EXP/</loc>
-    <lastmod>2022-05-28</lastmod>
+    <lastmod>2022-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://vulth.sly.io/tags/2021EXP/</loc>
-    <lastmod>2022-05-28</lastmod>
+    <lastmod>2022-05-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
