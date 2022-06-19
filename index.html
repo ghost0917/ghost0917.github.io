@@ -48,7 +48,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2022-06-20 04:57:38'
+  postUpdate: '2022-06-20 06:59:57'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -187,143 +187,127 @@ CVE-2022-31294
 Online Discussion Forum Site 1 的 save_users() 函数中的一个问题允许未经身份验证的攻击者任意创建或更新用户帐户。
 
 
-https://github.com/bigzo ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/readme-vul-01/" title="2022年CVE&amp;EXP信息(1)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(1)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-01/" title="2022年CVE&amp;EXP信息(1)">2022年CVE&amp;EXP信息(1)</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">置顶</span><span class="article-meta-separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T20:57:15.425Z" title="发表于 2022-06-20 04:57:15">2022-06-20</time></span></div><div class="content">CVE-2022-2129 
-在 8.2 之前的 GitHub 存储库 vim/vim 中写入越界。
+https://github.com/bigzo ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/readme-vul-01/" title="2022年CVE&amp;EXP信息(1)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(1)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-01/" title="2022年CVE&amp;EXP信息(1)">2022年CVE&amp;EXP信息(1)</a><div class="article-meta-wrap"><span class="article-meta"><i class="fas fa-thumbtack sticky"></i><span class="sticky">置顶</span><span class="article-meta-separator">|</span></span><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T22:59:32.059Z" title="发表于 2022-06-20 06:59:32">2022-06-20</time></span></div><div class="content">CVE-2022-34005 
+在 1.2.1050 之前的 TitanFTP（又名 Titan FTP）NextGen 中发现了一个问题。由于在 TitanFTP NextGen 安装期间默认安装的 Microsoft SQL Express 2019 实例（即 NX-I674（子问题 1））上的 sa 帐户的硬编码密码，存在远程代码执行。
 
-CVE-2022-2126 
-在 8.2 之前的 GitHub 存储库 vim/vim 中读取越界。
+CVE-2022-34006 
+在 1.2.1050 之前的 TitanFTP（又名 Titan FTP）NextGen 中发现了一个问题。安装时，Microsoft SQL Express 2019 默认安装一个以 SYSTEM 身份运行的 SQL 实例，其中 BUILTIN\Users 作为 sysadmin，从而使非特权 Windows 用户能够以 NT AUTHORITY\SYSTEM 身份在本地执行命令，即 NX-I674（子问题 2）。
 
-CVE-2022-2125 
-GitHub 存储库 vim/vim 8.2 之前的基于堆的缓冲区溢出。
+CVE-2022-34000 
+libjxl 0.6.1 在 render_pipeline/low_memory_render_pipeline.cc 的 LowMemoryRenderPipe ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/readme-vul-08/" title="2022年CVE&amp;EXP信息(8)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(8)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-08/" title="2022年CVE&amp;EXP信息(8)">2022年CVE&amp;EXP信息(8)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T22:59:32.080Z" title="发表于 2022-06-20 06:59:32">2022-06-20</time></span></div><div class="content">CVE-2022-22553 
+Dell EMC AppSync 版本 3.9 至 4.3 包含可从 UI 和 CLI 中利用的过度身份验证尝试漏洞的不当限制。相邻的未经身份验证的攻击者可能会利用此漏洞，导致密码暴力破解。如果用户使用弱密码，帐户接管是可能的。
 
-CVE-2022-23071 
-在 Recipes 中，版本 0.9.1 到 1.2.5 在“导入配方”功能中容易受到服务器端请求伪造 (SSRF) 的攻击。当攻击者输入 localhost URL 时，低权限攻击者可以访问/读取内部文件系统以访问敏感信息。
+CVE-2022-23127 
+三菱电机 MC Works64 版本 4.04E (10.95.210.01) 及之前版本和 ICONICS MobileHMI 版本 10.96.2 及之前版本中的跨站点脚本漏洞允许远程未经身份验证的攻击者获取 MC Works64 或 MobileHMI 的身份验证信息并使用通过在从MC Works64服务器或MobileHMI服务器传送到移动设备应用程序的监控屏幕的URL中注入恶意脚本并引导合法用户访问该URL来获取认证信息。
 
-CVE-2022-2124 
-8.2 之前的 GitHub 存储库 vim/vim 中的缓冲区过度读取。
-
-CVE-2022-33987 
-Node.js 12.1.0 之前的 got 包允许重定向到 UNIX 套接字。
-
-CVE-2022-33981 
-5.17.6 之前的 Linux 内核中的 drivers/block/floppy.c 容易受到拒绝服务的攻击，因为在 raw_cmd_ioctl 函数中释放 raw ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/readme-vul-08/" title="2022年CVE&amp;EXP信息(8)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(8)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-08/" title="2022年CVE&amp;EXP信息(8)">2022年CVE&amp;EXP信息(8)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T20:57:15.445Z" title="发表于 2022-06-20 04:57:15">2022-06-20</time></span></div><div class="content">CVE-2022-23129 
-三菱电机 MC Works64 版本 4.04E (10.95.210.01) 和之前的版本以及 ICONICS GENESIS64 版本 10.90 到 10.97 中的密码明文存储漏洞允许本地经过身份验证的攻击者获取身份验证信息并非法访问数据库。这是因为当将GENESIS64和MC Works64的数据库联动功能GridWorX的配置信息导出为CSV文件时，认证信息以明文形式保存，能够访问该CSV文件的攻击者可以获得认证信息。
-
-CVE-2022-23130 
-Mitsubishi Electric MC Works64 版本 4.00A (10.95.201.23) 至 4.04E (10.95.210.01)、ICONICS GENESIS64 版本 10.97 及之前版本和 ICONICS Hyper Historian 版本 10.97 及之前版本中的缓冲区过度读取漏洞允许攻击者在通过让合法用户将包含特制存储过程的配置文件导入 GENESIS64 或 MC Works64 并从 GENESIS64 或 MC Works64 对数据库执行命令来 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/readme-vul-07/" title="2022年CVE&amp;EXP信息(7)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(7)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-07/" title="2022年CVE&amp;EXP信息(7)">2022年CVE&amp;EXP信息(7)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T20:57:15.442Z" title="发表于 2022-06-20 04:57:15">2022-06-20</time></span></div><div class="content">CVE-2022-0713 
-GitHub 存储库radareorg/radare2 5.6.4 之前的基于堆的缓冲区溢出。
+CVE-2022-23128 
+Mitsubishi Electric MC Works64 版本 4.00A (10.95.201.23) 至 4.04E (10.95.210.01)、ICONICS GENESIS64 版本 10.95.3 至 10.97、I ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/readme-vul-07/" title="2022年CVE&amp;EXP信息(7)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(7)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-07/" title="2022年CVE&amp;EXP信息(7)">2022年CVE&amp;EXP信息(7)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T22:59:32.077Z" title="发表于 2022-06-20 06:59:32">2022-06-20</time></span></div><div class="content">CVE-2022-0714 
+GitHub 存储库 vim/vim 8.2.4436 之前的基于堆的缓冲区溢出。
 
 
-https://nvd.nist.gov/vuln/detail/CVE-2022-0713   
+https://nvd.nist.gov/vuln/detail/CVE-2022-0714   
 
-CVE-2022-0712 
-5.6.4 之前的 GitHub 存储库radareorg/radare2 中的空指针取消引用。
-
-
-https://nvd.nist.gov/vuln/detail/CVE-2022-0712   
-
-CVE-2022-0665 
-10.3.2 之前的 GitHub 存储库 pimcore/pimcore 中的路径遍历。
+CVE-2022-23652 
+capsule-proxy 是 Capsule Operator 的反向代理，它在 Kubernetes 中提供多租户。在 0.2.1 之前的版本中，具有适当身份验证机制的攻击者可能会使用恶意的 Connection 标头对 Kubernetes API 服务器发起权限提升攻击。此漏洞允许利用绑定到“capsule-proxy”的“cluster-admin”角色。此问题没有已知的解决方法。
 
 
-https://nvd.nist.gov/vuln/detail/CVE-2022-0665   
+https://nvd.nist.gov/vuln/detail/CVE-2022-23652   
 
-CVE-2022-0676 
-GitHub 存储库radareorg/radare2 5.6.4 之前的基于堆的缓冲区溢出。
+CVE-2022-23654 
+Wiki.js 是基于 Node.js 构建的 wiki 应用程序。在受影响的版本中，对一组受限路径具有写访问权限的经过身份验证的用户可以通过指定不同的目标页面 ID 来更新允许路径之外的页面，同时保持路径不变。 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/readme-vul-06/" title="2022年CVE&amp;EXP信息(6)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(6)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-06/" title="2022年CVE&amp;EXP信息(6)">2022年CVE&amp;EXP信息(6)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T22:59:32.074Z" title="发表于 2022-06-20 06:59:32">2022-06-20</time></span></div><div class="content">CVE-2022-22590 
+已通过改进内存管理解决释放后使用问题。此问题已在 iOS 15.3 和 iPadOS 15.3、watchOS 8.4、tvOS 15.3、Safari 15.3、macOS Monterey 12.2 中修复。处理恶意制作的网页内容可能会导致任意代码执行。
 
+CVE-2022-22589 
+验证问题已通过改进输入清理得到解决。此问题已在 iOS 15.3 和 iPadOS 15.3、watchOS 8.4、tvOS 15.3、Safari 15.3、macOS Monterey 12.2 中修复。处理恶意制作的邮件可能会导致运行任意 javascript。
 
-https://nvd.nist.gov/vuln/detail/CVE-2022-0676   
-
-CVE-2022-24564 
-Checkmk &lt;=2.0.0p19 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/readme-vul-06/" title="2022年CVE&amp;EXP信息(6)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(6)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-06/" title="2022年CVE&amp;EXP信息(6)">2022年CVE&amp;EXP信息(6)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T20:57:15.440Z" title="发表于 2022-06-20 04:57:15">2022-06-20</time></span></div><div class="content">CVE-2022-22587 
-内存损坏问题已通过改进输入验证得到解决。此问题已在 iOS 15.3 和 iPadOS 15.3、macOS Big Sur 11.6.3、macOS Monterey 12.2 中修复。恶意应用程序可能能够以内核权限执行任意代码。 Apple 知道有报告称此问题可能已被积极利用。
-
-CVE-2022-22586 
-越界写入问题已通过改进边界检查得到解决。此问题已在 macOS Monterey 12.2 中修复。恶意应用程序可能能够以内核权限执行任意代码。
-
-CVE-2022-22585 
-符号链接的路径验证逻辑中存在问题。此问题已通过改进路径清理得到解决。此问题已在 iOS 15.3 和 iPadOS 15.3、watchOS 8.4、tvOS 15.3、macOS Monterey 12.2、macOS Big Sur 11.6.3 中修复。应用程序可能能够访问用户的文件。
-
-CVE-2022-22584 
-内存损坏问题已通过改进验证得到解决。此问题已在 tvOS 15.3、iOS 15.3 和 iPadOS 15.3、watchOS 8.4、ma ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/readme-vul-05/" title="2022年CVE&amp;EXP信息(5)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(5)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-05/" title="2022年CVE&amp;EXP信息(5)">2022年CVE&amp;EXP信息(5)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T20:57:15.437Z" title="发表于 2022-06-20 04:57:15">2022-06-20</time></span></div><div class="content">CVE-2022-0914 
-4.3 之前的 Export All URLs WordPress 插件在导出数据时没有 CSRF，这可能允许攻击者让登录的管理员将所有帖子和页面（包括私有和草稿）导出到任意 CSV 文件中，然后攻击者可以例如下载和检索标题列表
+CVE-2022-22588 
+资源耗尽问题已通过改进输入验证得到解决。此问题已在 iOS 15.2.1 和 iPadOS 15.2.1 中修复。处理恶意制作的 HomeKit 配件名称可能会导致拒绝服务。
 
 
-https://nvd.nist.gov/vuln/detail/CVE-2022-0914   
+https://github.com/trevorspiniolas/homekitdos     
 
-CVE-2022-0919 
-7.6.3之前的沙龙预约系统免费和专业的WordPress插件在搜索预约时没有适当的授权，允许任何未经身份验证的用户搜索他人的预约，以及检索关于预约的敏感信息，例如全名、电子邮件和电话预订人的号码。
-
-
-https://nvd.nist.gov/vuln/detail/CVE-2022-0919   
-
-CVE-2022-0920 
-7.6.3 之前的 Salon 预订系统 Free 和 Pro WordPress 插件在其某些端点中没有适当的授权，这可能允许客户访问所有预订和其他客户的数据
+CVE-2022-22587 
+内存损坏问题已通过改进输入验证得到解决。此问题已在  ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/readme-vul-05/" title="2022年CVE&amp;EXP信息(5)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(5)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-05/" title="2022年CVE&amp;EXP信息(5)">2022年CVE&amp;EXP信息(5)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T22:59:32.071Z" title="发表于 2022-06-20 06:59:32">2022-06-20</time></span></div><div class="content">CVE-2022-0828 
+3.2.39 之前的下载管理器 WordPress 插件使用 uniqid php 函数来生成下载的主密钥，允许攻击者使用合理的资源暴力破解密钥，从而直接下载访问，而不管为下载设置的基于角色的限制或密码保护.
 
 
-https://nvd.nist.gov/vuln/detail/CVE-2022-0920   
+https://nvd.nist.gov/vuln/detail/CVE-2022-0828   
 
- ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/readme-vul-04/" title="2022年CVE&amp;EXP信息(4)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(4)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-04/" title="2022年CVE&amp;EXP信息(4)">2022年CVE&amp;EXP信息(4)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T20:57:15.434Z" title="发表于 2022-06-20 04:57:15">2022-06-20</time></span></div><div class="content">CVE-2022-27239 
-在 cifs-utils 到 6.14 中，解析 mount.cifs ip= 命令行参数时基于堆栈的缓冲区溢出可能导致本地攻击者获得 root 权限。
-
-CVE-2022-27905 
-在 8.6 之前的 ControlUp Real-Time Agent 中，未加引号的路径可能会导致权限提升。攻击者需要对 OS 驱动器 (C:) 的根级别的写入权限才能利用此漏洞。
-
-CVE-2022-28464 
-从 2.1.6 开始的 Apifox 易受跨站脚本 (XSS) 攻击，这可能导致远程代码执行。
-
-CVE-2022-1504 
-1.2.15 之前的 GitHub 存储库 microweber/microweber 中的 /demo/module/?module=HERE 中的 XSS。 XSS 攻击的典型影响。
+CVE-2022-0840 
+3.2.1 之前的 Easy Social Icons WordPress 插件在添加新社交图标时无法正确转义 image_file 字段，即使在 unfiltered_html 功能被禁止的情况下，也允许高权限用户注入任意 javascript。
 
 
-https://nvd.nist.gov/vuln/detail/CVE-2022-1504   
+https://nvd.nist.gov/vuln/detail/CVE-2022-0840   
 
-CVE-2022-1503 
-在 GetSimple CMS 中发现了一个被归类为有问题的漏洞。受此问题影响的是内容模块的文件 /admin ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/readme-vul-03/" title="2022年CVE&amp;EXP信息(3)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(3)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-03/" title="2022年CVE&amp;EXP信息(3)">2022年CVE&amp;EXP信息(3)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T20:57:15.430Z" title="发表于 2022-06-20 04:57:15">2022-06-20</time></span></div><div class="content">CVE-2022-25591 
+CVE-2022-0892 
+4.2 之前的 Export All URLs WordPress 插件在将 CSV 文件名输出回页面之前不会对其进行清理和转义，从而导致反射跨站点脚本
+
+
+https://nvd.nist.gov/vuln/detail/CVE-202 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/readme-vul-04/" title="2022年CVE&amp;EXP信息(4)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(4)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-04/" title="2022年CVE&amp;EXP信息(4)">2022年CVE&amp;EXP信息(4)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T22:59:32.067Z" title="发表于 2022-06-20 06:59:32">2022-06-20</time></span></div><div class="content">CVE-2022-24885 
+Nextcloud Android 应用程序是 Nextcloud 的 Android 客户端，Nextcloud 是一个自托管的生产力平台。在 3.19.1 版本之前，用户可以通过反复重新打开应用程序来绕过 Android 设备上 Nextcloud 应用程序的锁定。版本 3.19.1 包含对该问题的修复。目前没有已知的解决方法。
+
+
+https://nvd.nist.gov/vuln/detail/CVE-2022-24885   
+
+CVE-2022-24886 
+Nextcloud Android 应用程序是 Nextcloud 的 Android 客户端，Nextcloud 是一个自托管的生产力平台。在 3.19.0 之前的版本中，如果 Nextcloud 无需自行申请联系人权限即可访问联系人，则任何具有通知权限的应用程序都可以访问联系人。版本 3.19.0 包含此问题的修复程序。目前没有已知的解决方法。
+
+CVE-2022-24887 
+Nextcloud Talk 是 Nextcloud（一个自托管的生产力平台）的视频和音频会议应用程序。在 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/readme-vul-03/" title="2022年CVE&amp;EXP信息(3)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(3)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-03/" title="2022年CVE&amp;EXP信息(3)">2022年CVE&amp;EXP信息(3)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T22:59:32.064Z" title="发表于 2022-06-20 06:59:32">2022-06-20</time></span></div><div class="content">CVE-2022-1714 
+5.7.0 之前的 GitHub 存储库radareorg/radare2 中基于堆的缓冲区溢出。该错误导致程序读取超出预期缓冲区末尾的数据。通常，这可能允许攻击者从其他内存位置读取敏感信息或导致崩溃。
+
+
+https://nvd.nist.gov/vuln/detail/CVE-2022-1714   
+
+CVE-2022-22260 
+内核模块存在UAF漏洞。成功利用该漏洞会影响数据的完整性和可用性。
+
+CVE-2022-22261 
+HiAIserver存在验证模型中权重有效性的漏洞，成功利用该漏洞将影响AI服务。
+
+CVE-2022-25591 
 BlogEngine.NET v3.3.8.0 被发现包含一个任意文件删除漏洞，该漏洞允许攻击者通过精心设计的 HTTP 请求删除 Web 服务器根目录中的文件。
 
 
 https://nvd.nist.gov/vuln/detail/CVE-2022-25591   
 
 CVE-2022-27247 
-cdSoft Onlinetools-Smart Winhotel.MX 2021 中的 onlinetolls 允许攻击者通过 GastKont Insecure Direct Object Reference 下载任何客户的敏感信息（例如出生数据、完整地址、邮件信息和电话号码）。
+cdSoft Onlinetools-Smart Winhotel.MX 2021 中的 onlinet ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/readme-vul-02/" title="2022年CVE&amp;EXP信息(2)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(2)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-02/" title="2022年CVE&amp;EXP信息(2)">2022年CVE&amp;EXP信息(2)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T22:59:32.061Z" title="发表于 2022-06-20 06:59:32">2022-06-20</time></span></div><div class="content">CVE-2022-31983 
+Online Fire Reporting System v1.0 易受通过 /ofrs/admin/?page=requests/manage_request&amp;id= 的 SQL 注入攻击。
 
 
-https://nvd.nist.gov/vuln/detail/CVE-2022-27247   
+https://github.com/mel1huc4r/CVE-2022-31983     
 
-CVE-2022-28821 
-Adobe Framemaker 版本 2029u8（及更早）和 2020u4（及更早）受到越界写入漏洞的影响，该漏洞可能导致在当前用户的上下文中执行任意代码。利用此问题需要用户交互，因为受害者必须打开恶意文件。
-
-CVE-2022-28 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/readme-vul-02/" title="2022年CVE&amp;EXP信息(2)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(2)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-vul-02/" title="2022年CVE&amp;EXP信息(2)">2022年CVE&amp;EXP信息(2)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T20:57:15.428Z" title="发表于 2022-06-20 04:57:15">2022-06-20</time></span></div><div class="content">CVE-2022-32201 
-在 libjpeg 1.63 中，在 component.hpp 中的 Component::SubXOf 中有一个 NULL 指针取消引用。
+https://nvd.nist.gov/vuln/detail/CVE-2022-31983   
 
 
-https://nvd.nist.gov/vuln/detail/CVE-2022-32201   
-
-CVE-2022-32202 
-在 libjpeg 1.63 中，linebuffer.cpp 中的 LineBuffer :: FetchRegion 中有一个 NULL 指针取消引用。
+CVE-2022-31984 
+Online Fire Reporting System v1.0 易受通过 /ofrs/admin/requests/take_action.php?id= 的 SQL 注入攻击。
 
 
-https://nvd.nist.gov/vuln/detail/CVE-2022-32202   
+https://nvd.nist.gov/vuln/detail/CVE-2022-31984   
 
-CVE-2022-1215 
-在 libinput 中发现了格式字符串漏洞
-
-CVE-2022-1419 
-此漏洞的根本原因是 ioctl$DRM_IOCTL_MODE_DESTROY_DUMB 可以同时减少 *drm_vgem_gem_object *（在 vgem_gem_dumb_create 中创建）的引用计数，并且 *vgem_gem_dumb_create * 将访问已释放的 drm_vgem_gem_ ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/readme-exp-03/" title="2022年EXP信息(3)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年EXP信息(3)"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/readme-exp-03/" title="2022年EXP信息(3)">2022年EXP信息(3)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T00:35:37.022Z" title="发表于 2022-06-19 08:35:37">2022-06-19</time></span></div><div class="content">CVE-2022-22588 
-资源耗尽问题已通过改进输入验证得到解决。此问题已在 iOS 15.2.1 和 iPadOS 15.2.1 中修复。处理恶意制作的 HomeKit 配件名称可能会导致拒绝服务。
+CVE-2022-32200 
+libdwarf 0.4.0 在 dwarf_util.c 中的 _dwarf_check_string_valid 中有一个基于堆的缓冲区过度读取。
 
 
-https://github.com/trevorspiniolas/homekitdos     
-
-CVE-2022-1002 
-Mattermost 6.3.0 及更早版本无法正确清理发送给访客用户的电子邮件邀请中的 HTML 内容，这允许具有特殊权限的注册用户邀请访客用户在电子邮件邀请中注入未转义的 HTML 内容。
+https://nvd.nist.gov/v ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2021/readme-exp-01/" title="2021年EXP信息(1)"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2021年EXP信息(1)"></a></div><div class="recent-post-info"><a class="article-title" href="/2021/readme-exp-01/" title="2021年EXP信息(1)">2021年EXP信息(1)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-06-19T22:59:32.011Z" title="发表于 2022-06-20 06:59:32">2022-06-20</time></span></div><div class="content">CVE-2021-40649 
+在 Connx 版本 6.2.0.1269 (20210623) 中，cookie 可以由应用程序发出，并且没有设置 HttpOnly 标志。
 
 
-https://nvd.nist.gov/vuln/detail/CVE-2022-1002   
+https://github.com/l00neyhacker/CVE-2021-40649     
 
-CVE-2022-24637 
-1.7.4 之前的 Open Web Analytics (OWA) 允许未经身份验证的远程攻击者获取敏感的用户信息，这些信息可用于通过利用缓存哈希来获得管理员权限。发生这种情况是因为使用 ‘&lt;?php 生成的文件（而不是预期的 “&lt;?php 序列）不是由 PHP 解释器处理的。
+CVE-2021-40650 
+在 Connx 版本 6.2.0.1269 (20210623) 中，cookie 可以由应用程序发出并且没有设置安全标志。
 
 
-https://nvd. ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">FALSE</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">21</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/readme-vul-08/" title="2022年CVE&amp;EXP信息(8)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(8)"/></a><div class="content"><a class="title" href="/2022/readme-vul-08/" title="2022年CVE&amp;EXP信息(8)">2022年CVE&amp;EXP信息(8)</a><time datetime="2022-06-19T20:57:15.445Z" title="发表于 2022-06-20 04:57:15">2022-06-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/readme-vul-07/" title="2022年CVE&amp;EXP信息(7)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(7)"/></a><div class="content"><a class="title" href="/2022/readme-vul-07/" title="2022年CVE&amp;EXP信息(7)">2022年CVE&amp;EXP信息(7)</a><time datetime="2022-06-19T20:57:15.442Z" title="发表于 2022-06-20 04:57:15">2022-06-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/readme-vul-06/" title="2022年CVE&amp;EXP信息(6)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(6)"/></a><div class="content"><a class="title" href="/2022/readme-vul-06/" title="2022年CVE&amp;EXP信息(6)">2022年CVE&amp;EXP信息(6)</a><time datetime="2022-06-19T20:57:15.440Z" title="发表于 2022-06-20 04:57:15">2022-06-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/readme-vul-05/" title="2022年CVE&amp;EXP信息(5)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(5)"/></a><div class="content"><a class="title" href="/2022/readme-vul-05/" title="2022年CVE&amp;EXP信息(5)">2022年CVE&amp;EXP信息(5)</a><time datetime="2022-06-19T20:57:15.437Z" title="发表于 2022-06-20 04:57:15">2022-06-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/readme-vul-04/" title="2022年CVE&amp;EXP信息(4)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(4)"/></a><div class="content"><a class="title" href="/2022/readme-vul-04/" title="2022年CVE&amp;EXP信息(4)">2022年CVE&amp;EXP信息(4)</a><time datetime="2022-06-19T20:57:15.434Z" title="发表于 2022-06-20 04:57:15">2022-06-20</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/2021EXP/" style="font-size: 1.3em; color: #99a1ac">2021EXP</a> <a href="/tags/2022CVE-EXP/" style="font-size: 1.4em; color: #99a5b6">2022CVE&EXP</a> <a href="/tags/2022EXP/" style="font-size: 1.2em; color: #999da3">2022EXP</a> <a href="/tags/2022NEWS/" style="font-size: 1.1em; color: #999">2022NEWS</a> <a href="/tags/CVE-EXP/" style="font-size: 1.4em; color: #99a5b6">CVE&EXP</a> <a href="/tags/EXP/" style="font-size: 1.5em; color: #99a9bf">EXP</a> <a href="/tags/FOCUS/" style="font-size: 1.1em; color: #999">FOCUS</a> <a href="/tags/NEWS/" style="font-size: 1.1em; color: #999">NEWS</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">六月 2022</span><span class="card-archive-list-count">20</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">21</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-06-19T20:57:36.631Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By FALSE</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+https://github.com/l00neyhacker/CVE-2021-40650     
+
+CVE-2021-25116 
+1.0.1 之前的 Enqueue Anything WordPress 插件在 remove_asset AJAX 操作中没有授权和 CSRF 检查，并且不能确保要删除的项目实际上是资产。因此，订阅者等低权限用户可以删除任意资产，以及将任意帖子放入垃圾箱。
+
+
+https://nvd.nist.gov/vuln/detail/CVE-2021-25116   
+
+CVE-2021-40902 
+flatCor ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">FALSE</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">21</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/readme-vul-08/" title="2022年CVE&amp;EXP信息(8)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(8)"/></a><div class="content"><a class="title" href="/2022/readme-vul-08/" title="2022年CVE&amp;EXP信息(8)">2022年CVE&amp;EXP信息(8)</a><time datetime="2022-06-19T22:59:32.080Z" title="发表于 2022-06-20 06:59:32">2022-06-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/readme-vul-07/" title="2022年CVE&amp;EXP信息(7)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(7)"/></a><div class="content"><a class="title" href="/2022/readme-vul-07/" title="2022年CVE&amp;EXP信息(7)">2022年CVE&amp;EXP信息(7)</a><time datetime="2022-06-19T22:59:32.077Z" title="发表于 2022-06-20 06:59:32">2022-06-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/readme-vul-06/" title="2022年CVE&amp;EXP信息(6)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(6)"/></a><div class="content"><a class="title" href="/2022/readme-vul-06/" title="2022年CVE&amp;EXP信息(6)">2022年CVE&amp;EXP信息(6)</a><time datetime="2022-06-19T22:59:32.074Z" title="发表于 2022-06-20 06:59:32">2022-06-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/readme-vul-05/" title="2022年CVE&amp;EXP信息(5)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(5)"/></a><div class="content"><a class="title" href="/2022/readme-vul-05/" title="2022年CVE&amp;EXP信息(5)">2022年CVE&amp;EXP信息(5)</a><time datetime="2022-06-19T22:59:32.071Z" title="发表于 2022-06-20 06:59:32">2022-06-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/readme-vul-04/" title="2022年CVE&amp;EXP信息(4)"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2022年CVE&amp;EXP信息(4)"/></a><div class="content"><a class="title" href="/2022/readme-vul-04/" title="2022年CVE&amp;EXP信息(4)">2022年CVE&amp;EXP信息(4)</a><time datetime="2022-06-19T22:59:32.067Z" title="发表于 2022-06-20 06:59:32">2022-06-20</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/2021EXP/" style="font-size: 1.3em; color: #99a1ac">2021EXP</a> <a href="/tags/2022CVE-EXP/" style="font-size: 1.4em; color: #99a5b6">2022CVE&EXP</a> <a href="/tags/2022EXP/" style="font-size: 1.2em; color: #999da3">2022EXP</a> <a href="/tags/2022NEWS/" style="font-size: 1.1em; color: #999">2022NEWS</a> <a href="/tags/CVE-EXP/" style="font-size: 1.4em; color: #99a5b6">CVE&EXP</a> <a href="/tags/EXP/" style="font-size: 1.5em; color: #99a9bf">EXP</a> <a href="/tags/FOCUS/" style="font-size: 1.1em; color: #999">FOCUS</a> <a href="/tags/NEWS/" style="font-size: 1.1em; color: #999">NEWS</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/06/"><span class="card-archive-list-date">六月 2022</span><span class="card-archive-list-count">20</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/04/"><span class="card-archive-list-date">四月 2022</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">21</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-06-19T22:59:54.700Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By FALSE</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
