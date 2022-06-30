@@ -1,3 +1,4 @@
+https://vulth.sly.io/2022/readme-news-01/
 https://vulth.sly.io/2022/readme-vul-09/
 https://vulth.sly.io/2022/readme-vul-08/
 https://vulth.sly.io/2022/readme-vul-07/
@@ -18,7 +19,6 @@ https://vulth.sly.io/2021/readme-exp-04/
 https://vulth.sly.io/2021/readme-exp-03/
 https://vulth.sly.io/2021/readme-exp-02/
 https://vulth.sly.io/2021/readme-exp-01/
-https://vulth.sly.io/2022/readme-news-01/
 https://vulth.sly.io/readme-exp-focus-01/
 https://vulth.sly.io/about/index.html
 https://vulth.sly.io/404.html
