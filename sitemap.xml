@@ -2,34 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://vulth.sly.io/2022/readme-vul-09/</loc>
-    
-    <lastmod>2022-07-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vulth.sly.io/2022/readme-vul-08/</loc>
-    
-    <lastmod>2022-07-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vulth.sly.io/2022/readme-vul-07/</loc>
-    
-    <lastmod>2022-07-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vulth.sly.io/2022/readme-vul-06/</loc>
+    <loc>https://vulth.sly.io/readme-exp-focus-01/</loc>
     
     <lastmod>2022-07-13</lastmod>
     
@@ -39,24 +12,6 @@
   
   <url>
     <loc>https://vulth.sly.io/2022/readme-vul-05/</loc>
-    
-    <lastmod>2022-07-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vulth.sly.io/2022/readme-vul-04/</loc>
-    
-    <lastmod>2022-07-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vulth.sly.io/2022/readme-vul-03/</loc>
     
     <lastmod>2022-07-13</lastmod>
     
@@ -191,9 +146,54 @@
   </url>
   
   <url>
-    <loc>https://vulth.sly.io/readme-exp-focus-01/</loc>
+    <loc>https://vulth.sly.io/2022/readme-vul-09/</loc>
     
-    <lastmod>2022-07-10</lastmod>
+    <lastmod>2022-07-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vulth.sly.io/2022/readme-vul-08/</loc>
+    
+    <lastmod>2022-07-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vulth.sly.io/2022/readme-vul-07/</loc>
+    
+    <lastmod>2022-07-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vulth.sly.io/2022/readme-vul-06/</loc>
+    
+    <lastmod>2022-07-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vulth.sly.io/2022/readme-vul-04/</loc>
+    
+    <lastmod>2022-07-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://vulth.sly.io/2022/readme-vul-03/</loc>
+    
+    <lastmod>2022-07-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
