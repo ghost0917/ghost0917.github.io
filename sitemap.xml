@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://vulth.sly.io/2022/readme-vul-10/</loc>
+    
+    <lastmod>2022-07-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vulth.sly.io/2022/readme-vul-09/</loc>
     
     <lastmod>2022-07-14</lastmod>
@@ -128,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://vulth.sly.io/2021/readme-exp-07/</loc>
+    <loc>https://vulth.sly.io/2021/readme-exp-06/</loc>
     
     <lastmod>2022-07-14</lastmod>
     
@@ -137,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://vulth.sly.io/2021/readme-exp-06/</loc>
+    <loc>https://vulth.sly.io/2021/readme-exp-07/</loc>
     
     <lastmod>2022-07-14</lastmod>
     
