@@ -92,6 +92,15 @@
   </url>
   
   <url>
+    <loc>https://vulth.sly.io/2022/readme-news-01/</loc>
+    
+    <lastmod>2022-07-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://vulth.sly.io/2022/readme-exp-04/</loc>
     
     <lastmod>2022-07-22</lastmod>
@@ -185,15 +194,6 @@
     <loc>https://vulth.sly.io/2021/readme-exp-01/</loc>
     
     <lastmod>2022-07-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://vulth.sly.io/2022/readme-news-01/</loc>
-    
-    <lastmod>2022-07-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
